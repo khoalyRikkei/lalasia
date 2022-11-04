@@ -1,0 +1,125 @@
+// set heading
+h1 {
+    font-size: 64px;
+}
+h2 {
+    font-size: 44px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+h6 {
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 130%;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    max-width: 1440px;
+    height: 120px;
+    margin: 0 auto;
+    border-bottom: 2px solid #f3f3f3;
+    margin-bottom: 100px;
+}
+.container {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: $color-black;
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: bold;
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        font-weight: medium;
+    }
+    &__features {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+    li {
+        list-style: none;
+    }
+}
+
+.hero {
+    text-align: center;
+    position: relative;
+    width: 1240px;
+    margin: 0 auto;
+    &__heading {
+        width: 724px;
+        color: $color-black;
+        margin: 0 auto;
+        margin-bottom: 28px;
+        position: relative;
+        &__start {
+            background-image: url("../images/hero-start.png");
+            width: 51px;
+            height: 51px;
+            background-size: contain;
+            position: absolute;
+            right: 13px;
+            top: 78px;
+        }
+    }
+    &__arrow {
+        background-image: url("../images/hero-arrow.png");
+        width: 249px;
+        height: 249px;
+        background-size: contain;
+        left: 0px;
+        position: absolute;
+        top: 68px;
+    }
+
+    &__description {
+        width: 796px;
+        margin: 0 auto;
+    }
+    &__search-bar {
+        width: 810px;
+        height: 84px;
+        position: absolute;
+        top: 342px;
+        background-color: red;
+        offset: 0px, 4px rgba(175, 173, 181, 0.2);
+        z-index: 1;
+        left: 215px;
+    }
+    &__image {
+        background-image: url("../images/hero-image.png");
+        background-size: contain;
+        width: 1240px;
+        height: 480px;
+        position: absolute;
+        top: 384px;
+    }
+}

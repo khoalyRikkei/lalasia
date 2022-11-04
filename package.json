@@ -1,0 +1,14 @@
+{
+    "name": "lalasia---furniture",
+    "version": "1.0.0",
+    "description": "Cut layout from figma",
+    "main": "index.js",
+    "scripts": {
+        "sasstocss": "sass assets/sass/main.scss assets/css/main.css -w"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "sass": "^1.56.0"
+    }
+}
