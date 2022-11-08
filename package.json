@@ -4,7 +4,8 @@
     "description": "Cut layout from figma",
     "main": "index.js",
     "scripts": {
-        "sasstocss": "sass assets/sass/main.scss assets/css/main.css -w"
+        "sasstocss": "sass assets/sass/main.scss assets/css/main.css -w",
+        "sassDtocssD": "sass assets/sass/desktop.scss assets/css/desktop.css -w"
     },
     "author": "",
     "license": "ISC",

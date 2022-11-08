@@ -13,13 +13,18 @@
             referrerpolicy="no-referrer"
         />
         <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/desktop.css" />
     </head>
     <body>
         <header>
             <nav class="navbar container">
                 <a class="navbar__logo" href="#">
-                    <img src="./assets/images/logo.png" alt="logo" />
-                    <p class="navbar__logo--text">Lalasia</p>
+                    <img
+                        src="./assets/images/logo.png"
+                        alt="logo"
+                        width="100%"
+                    />
+                    <h3 class="navbar__logo--text">Lalasia</h3>
                 </a>
                 <ul class="navbar__menu">
                     <li><a href="#">Product</a></li>
@@ -29,11 +34,13 @@
                 </ul>
                 <ul class="navbar__features">
                     <li>
-                        <a href="#"><img src="./images/bag.png" alt="bag" /></a>
+                        <a href="#"
+                            ><img src="./assets/images/bag.png" alt="bag"
+                        /></a>
                     </li>
                     <li>
                         <a href="#"
-                            ><img src="./images/user.png" alt="user"
+                            ><img src="./assets/images/user.png" alt="user"
                         /></a>
                     </li>
                 </ul>
@@ -42,7 +49,7 @@
         </header>
         <main>
             <div class="container">
-                <div class="hero">
+                <section class="hero section">
                     <div class="hero__heading">
                         <h1>Discover Furniture With High Quality Wood</h1>
 
@@ -61,7 +68,7 @@
                             <img
                                 src="./assets/images/search-icon.png"
                                 alt=""
-                                width="24"
+                                width="100%"
                             />
                             <input type="text" placeholder="Search property" />
                         </div>
@@ -75,18 +82,18 @@
                             width="100%"
                         />
                     </div>
-                </div>
+                </section>
                 <section id="benifits" class="section">
                     <div class="section__title">
                         <div class="section__title--main">
                             <h5 class="section__title--small">Benefits</h5>
                             <h2>Benefits when using our services</h2>
                         </div>
-                        <div class="section__title--content">
+                        <p class="section__title--content">
                             Pellentesque etiam blandit in tincidunt at donec.
                             Eget ipsum dignissim placerat nisi, adipiscing
                             mauris non purus parturient.
-                        </div>
+                        </p>
                     </div>
                     <div class="section__content">
                         <div class="card">
@@ -96,12 +103,12 @@
                                     alt="Icon-3square"
                                 />
                             </div>
-                            <div class="card__title">Many Choices</div>
-                            <div class="card__content">
+                            <h3 class="card__title">Many Choices</h3>
+                            <p class="card__content">
                                 Pellentesque etiam blandit in tincidunt at
                                 donec. Eget ipsum dignissim placerat nisi,
                                 adipiscing mauris non.
-                            </div>
+                            </p>
                         </div>
                         <div class="card">
                             <div class="card__icon">
@@ -110,12 +117,12 @@
                                     alt="Icon-calendar"
                                 />
                             </div>
-                            <div class="card__title">Fast and On Time</div>
-                            <div class="card__content">
+                            <h3 class="card__title">Fast and On Time</h3>
+                            <p class="card__content">
                                 Pellentesque etiam blandit in tincidunt at
                                 donec. Eget ipsum dignissim placerat nisi,
                                 adipiscing mauris non.
-                            </div>
+                            </p>
                         </div>
                         <div class="card">
                             <div class="card__icon">
@@ -124,31 +131,99 @@
                                     alt="Icon-money-tick"
                                 />
                             </div>
-                            <div class="card__title">Affordable Price</div>
-                            <div class="card__content">
+                            <h3 class="card__title">Affordable Price</h3>
+                            <p class="card__content">
                                 Pellentesque etiam blandit in tincidunt at
                                 donec. Eget ipsum dignissim placerat nisi,
                                 adipiscing mauris non.
-                            </div>
+                            </p>
                         </div>
                     </div>
                 </section>
-                <section id="product" class="section">
-                    <div class="container">
-                        <div class="section__title text--center">
-                            <div class="section__title--main">
-                                <h5 class="section__title--small">Product</h5>
-                                <h2>Our popular product</h2>
-                            </div>
-                            <div class="section__title--content">
-                                Pellentesque etiam blandit in tincidunt at
-                                donec. Eget ipsum dignissim placerat nisi,
-                                adipiscing mauris non purus parturient.
+            </div>
+            <section id="product" class="section">
+                <div class="section__title text--center">
+                    <div class="section__title--main">
+                        <h5 class="section__title--small">Product</h5>
+                        <h2>Our popular product</h2>
+                    </div>
+                    <p class="section__title--content">
+                        Pellentesque etiam blandit in tincidunt at donec. Eget
+                        ipsum dignissim placerat nisi, adipiscing mauris non
+                        purus parturient.
+                    </p>
+                </div>
+                <div class="section__content">
+                    <div
+                        class="slick-slider"
+                        onmousedown="handleMouseDown()"
+                        onmouseup="handleMouseUp()"
+                    >
+                        <div class="slick-slider__item">
+                            <img
+                                src="./assets/images/product-img-1.png"
+                                alt="product-img-1"
+                            />
+                            <div class="slick-slider__item__text">
+                                <p>Chair</p>
+                                <div class="slick-slider__item__text--title">
+                                    <h3>White Aesthetic Chair</h3>
+                                    <p>Combination of wood and wool</p>
+                                </div>
+
+                                <h3>$63.47</h3>
                             </div>
                         </div>
-                        <div class="section__content"></div>
+                        <div class="slick-slider__item">
+                            <img
+                                src="./assets/images/product-img-2.png"
+                                alt="product-img-2"
+                            />
+                            <div class="slick-slider__item__text">
+                                <p>Lamp</p>
+                                <div class="slick-slider__item__text--title">
+                                    <h3>Bardono Smart Lamp</h3>
+                                    <p>Easy to use with bluetooth connection</p>
+                                </div>
+
+                                <h3>$62.23</h3>
+                            </div>
+                        </div>
+                        <div class="slick-slider__item">
+                            <img
+                                src="./assets/images/product-img-1.png"
+                                alt="product-img-1"
+                            />
+                            <div class="slick-slider__item__text">
+                                <p>Chair</p>
+                                <div class="slick-slider__item__text--title">
+                                    <h3>White Aesthetic Chair</h3>
+                                    <p>Combination of wood and wool</p>
+                                </div>
+
+                                <h3>$63.47</h3>
+                            </div>
+                        </div>
+
+                        <div class="slick-slider__item">
+                            <img
+                                src="./assets/images/product-img-2.png"
+                                alt="product-img-2"
+                            />
+                            <div class="slick-slider__item__text">
+                                <p>Chair</p>
+                                <div class="slick-slider__item__text--title">
+                                    <h3>White Aesthetic Chair</h3>
+                                    <p>Combination of wood and wool</p>
+                                </div>
+
+                                <h3>$63.47</h3>
+                            </div>
+                        </div>
                     </div>
-                </section>
+                </div>
+            </section>
+            <div class="container">
                 <section id="our-product" class="section">
                     <div class="section__title">
                         <div class="section__title--main">
@@ -157,11 +232,11 @@
                                 Crafted by talented and high quality material
                             </h2>
                         </div>
-                        <div class="section__title--content">
+                        <p class="section__title--content">
                             Pellentesque etiam blandit in tincidunt at donec.
                             Eget ipsum dignissim placerat nisi, adipiscing
                             mauris non purus parturient.
-                        </div>
+                        </p>
                     </div>
                     <div class="section__content">
                         <button class="btn btn--primary">Learn More</button>
@@ -189,14 +264,14 @@
                             <img
                                 src="./assets/images/our-product-img-1.png"
                                 alt="our-product-img-1"
-                                width="100%"
+                                width="50%"
                             />
                         </div>
                         <div class="card">
                             <img
                                 src="./assets/images/our-product-img-2.png"
                                 alt="our-product-img-2"
-                                width="100%"
+                                width="50%"
                             />
                         </div>
                     </div>
@@ -207,11 +282,11 @@
                             <h5 class="section__title--small">Testimonials</h5>
                             <h2>What our customer say</h2>
                         </div>
-                        <div class="section__title--content">
+                        <p class="section__title--content">
                             Pellentesque etiam blandit in tincidunt at donec.
                             Eget ipsum dignissim placerat nisi, adipiscing
                             mauris non purus parturient.
-                        </div>
+                        </p>
                     </div>
                     <div class="section__content">
                         <div class="card">
@@ -221,11 +296,11 @@
                                     alt="icon-quote-up"
                                 />
                             </div>
-                            <div class="card__content">
+                            <p class="card__content">
                                 Pellentesque etiam blandit in tincidunt at
                                 donec. Eget ipsum dignissim placerat nisi,
                                 adipiscing mauris non.
-                            </div>
+                            </p>
                             <div class="card__review">
                                 <div class="card__review__item">
                                     <img
@@ -244,17 +319,23 @@
                     </div>
                 </section>
                 <section id="articles" class="section">
-                    <div class="section__title">
-                        <div class="section__title--main">
-                            <h5 class="section__title--small">Articles</h5>
-                            <h2>The best furniture comes from Lalasia</h2>
-                        </div>
-                        <div class="section__title--content">
-                            Pellentesque etiam blandit in tincidunt at donec.
-                        </div>
-                    </div>
-                    <div class="section__content">
-                        <div class="article-list">
+                    <div class="article-list">
+                        <div class="article-list--main">
+                            <div class="section__title">
+                                <div class="section__title--main">
+                                    <h5 class="section__title--small">
+                                        Articles
+                                    </h5>
+                                    <h2>
+                                        The best furniture comes from Lalasia
+                                    </h2>
+                                </div>
+                                <p class="section__title--content">
+                                    Pellentesque etiam blandit in tincidunt at
+                                    donec.
+                                </p>
+                            </div>
+
                             <article class="card article-feature">
                                 <div class="article-feature__img">
                                     <img
@@ -262,31 +343,43 @@
                                         alt=" articles-img-1"
                                         width="100%"
                                     />
-                                </div>
-                                <div class="article-feature__text">
-                                    <p class="article-feature__text--catalogue">
-                                        Tips and Trick
-                                    </p>
-                                    <h3 class="article-feature__text--title">
-                                        Create Cozy Dinning Room Vibes
-                                    </h3>
-                                    <p class="article-feature__text--summary">
-                                        Decorating with neutrals brings balance
-                                        to the dining room. With eclectic
-                                        decoration on the sides, Caruso Dining
-                                        Table and Cyrillo Dining Chairs elevate
-                                        the tonal base of the room. The modern
-                                        furniture set gives personality to any
-                                        space in all types of architecture. The
-                                        wide volume enables everyone to sit back
-                                        and relax, be it in the dining room,
-                                        conference, or office.
-                                    </p>
-                                    <div class="article-feature__text--more">
-                                        Read More
+                                    <div class="article-feature__text">
+                                        <p
+                                            class="article-featur__text--catalogue"
+                                        >
+                                            Tips and Trick
+                                        </p>
+                                        <h3
+                                            class="article-feature__text--title"
+                                        >
+                                            Create Cozy Dinning Room Vibes
+                                        </h3>
+                                        <p
+                                            class="article-feature__text--summary"
+                                        >
+                                            Decorating with neutrals brings
+                                            balance to the dining room. With
+                                            eclectic decoration on the sides,
+                                            Caruso Dining Table and Cyrillo
+                                            Dining Chairs elevate the tonal base
+                                            of the room. The modern furniture
+                                            set gives personality to any space
+                                            in all types of architecture. The
+                                            wide volume enables everyone to sit
+                                            back and relax, be it in the dining
+                                            room, conference, or office.
+                                        </p>
+                                        <div
+                                            class="article-feature__text--more"
+                                        >
+                                            Read More
+                                        </div>
                                     </div>
                                 </div>
                             </article>
+                        </div>
+
+                        <div class="article-list--aside">
                             <article class="card article-item">
                                 <div class="article-item__img">
                                     <img
@@ -370,22 +463,30 @@
                 </section>
                 <section class="ads">
                     <h2>Join with me for get special discount</h2>
+
                     <button class="btn btn--primary">
-                        Learn More <i class="fa-solid fa-arrow-right-long"></i>
+                        <h4>
+                            Learn More
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </h4>
                     </button>
                 </section>
             </div>
         </main>
         <footer>
             <nav class="navbar">
-                <a class="navbar__logo" href="#">
-                    <img src="./assets/images/logo.png" alt="logo" />
-                    <p class="navbar__logo--text">Lalasia</p>
-                </a>
-                <p class="navbar__description">
-                    Lalasia is digital agency that help you make better
-                    experience iaculis cras in.
-                </p>
+                <div>
+                    '
+                    <a class="navbar__logo" href="#">
+                        <img src="./assets/images/logo.png" alt="logo" />
+                        <h3 class="navbar__logo--text">Lalasia</h3>
+                    </a>
+                    <p class="navbar__description">
+                        Lalasia is digital agency that help you make better
+                        experience iaculis cras in.
+                    </p>
+                </div>
+
                 <ul class="navbar__menu">
                     <li>
                         <div class="navbar__menu__item">
@@ -438,5 +539,6 @@
                 </ul>
             </nav>
         </footer>
+        <script src="./js/script.js"></script>
     </body>
 </html>
