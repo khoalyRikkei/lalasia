@@ -1,0 +1,41 @@
+.hero {
+    &__heading {
+        &__start {
+            display: none;
+        }
+        &__arrow {
+            display: none;
+        }
+    }
+    &__search-bar {
+        width: 100%;
+        max-width: 70%;
+        margin: 0 6.9%;
+        // height: 54px;
+        // background-color: white;
+        // padding: 8px;
+        // margin: 0 auto;
+        // margin-bottom: 30px;
+        // display: flex;
+        // justify-content: space-between;
+        // &__icon {
+        //     align-self: center;
+        //     display: flex;
+        //     width: 24px;
+        // }
+        // input {
+        //     font-weight: bold;
+        //     padding: 0 15px;
+        //     border: none;
+        //     outline: none;
+        // }
+        // button {
+        //     padding: 10px 10%;
+        // }
+    }
+    &__tool {
+        display: flex;
+        align-items: center;
+        color: red;
+    }
+}

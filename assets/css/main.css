@@ -73,9 +73,9 @@ h5 {
   align-items: center;
 }
 .card__review__item img {
-  width: 8%;
+  width: 8vw;
   min-width: 18px;
-  max-width: 30px;
+  max-width: 50px;
 }
 
 .btn {
@@ -89,6 +89,20 @@ h5 {
   color: white;
 }
 
+.btn-square-primary {
+  width: 70px;
+  height: 70px;
+  background-color: #518581;
+  padding: 0 !important;
+}
+
+.btn-square-white {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  padding: 0 !important;
+}
+
 .text--p1 {
   font-size: 18;
   font-weight: 500;
@@ -100,6 +114,39 @@ h5 {
 
 .text--center {
   text-align: center;
+}
+
+.icon-arrow-right-long {
+  background-image: url("../images/arrow-right-long.png");
+  width: 70px;
+  height: 20px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 10px;
+}
+
+.icon-arrow-left {
+  background-image: url("../images/arrow-left.png");
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 10px;
+}
+
+.icon-arrow-right {
+  background-image: url("../images/arrow-right.png");
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 10px;
 }
 
 body {
@@ -231,6 +278,7 @@ header {
 }
 
 .section {
+  width: 100%;
   margin-bottom: 100px;
 }
 .section__title {
@@ -246,13 +294,13 @@ header {
 /* ----- slick-slider -----*/
 .slick-slider {
   position: relative;
-  height: 90vw;
+  width: 100%;
   overflow: hidden;
 }
 .slick-slider__item {
   position: absolute;
   width: 50vw;
-  height: 85vw;
+  height: auto;
 }
 .slick-slider__item img {
   width: 100%;
@@ -367,6 +415,9 @@ header {
   margin-bottom: 50px;
   justify-content: space-between;
 }
+.info-bar__item {
+  height: max-content;
+}
 .info-bar__item--title {
   margin-bottom: 4px;
   font-size: 22px;
@@ -382,6 +433,7 @@ header {
   height: 20px;
   background-size: contain;
   background-repeat: no-repeat;
+  display: inline-block;
 }
 
 .ads {
@@ -420,6 +472,19 @@ footer .navbar__logo {
 }
 footer .navbar__description {
   margin-bottom: 30px;
+}
+
+.display-none-moblie {
+  display: none;
+}
+
+.pagination {
+  display: none;
+}
+
+.action {
+  border-bottom: 2px solid #518581;
+  height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

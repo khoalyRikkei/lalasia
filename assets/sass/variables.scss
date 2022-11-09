@@ -1,0 +1,58 @@
+// variable fonts
+
+@font-face {
+    font-family: Eudoxus Sans;
+    src: url("../fonts/Eudoxus-Sans-font/EudoxusSans-Medium.ttf") format("ttf"),
+        url("../fonts/Eudoxus-Sans-font/EudoxusSans-Medium.woff") format("woff"),
+        url("../fonts/Eudoxus-Sans-font/EudoxusSans-Medium.woff2")
+            format("woff2");
+    font-weight: 500;
+}
+@font-face {
+    font-family: Eudoxus Sans;
+    src: url("../fonts/Eudoxus-Sans-font/EudoxusSans-Bold.ttf") format("ttf"),
+        url("../fonts/Eudoxus-Sans-font/EudoxusSans-Bold.ttf") format("woff"),
+        url("../fonts/Eudoxus-Sans-font/EudoxusSans-Bold.woff2") format("woff2");
+    font-weight: bold;
+}
+@font-face {
+    font-family: Eudoxus Sans;
+    src: url("../fonts/Eudoxus-Sans-font/EudoxusSans-Regular.ttf") format("ttf"),
+        url("../fonts/Eudoxus-Sans-font/EudoxusSans-Regular.woff")
+            format("woff"),
+        url("../fonts/Eudoxus-Sans-font/EudoxusSans-Regular.woff2")
+            format("woff2");
+    font-weight: normal;
+}
+//variable color
+$color-borrow: #ad7e5c;
+$secondary-color: #ffb23f;
+$primary-color: #518581;
+$title-color: #151411;
+$paragraph-color: #afadb5;
+$line-screen-color: #f3f3f3;
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: $title-color;
+}
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: $title-color;
+}
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: $title-color;
+}
+h4 {
+    font-size: 14px;
+    font-weight: bold;
+}
+h5 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}

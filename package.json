@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "sasstocss": "sass assets/sass/main.scss assets/css/main.css -w",
-        "sassDtocssD": "sass assets/sass/desktop.scss assets/css/desktop.css -w"
+        "sassDtocssD": "sass assets/sass/desktop.scss assets/css/desktop.css -w",
+        "product": "sass assets/sass/product.scss assets/css/product.css -w"
     },
     "author": "",
     "license": "ISC",

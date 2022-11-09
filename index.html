@@ -5,17 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lalasia</title>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
         <link rel="stylesheet" href="./assets/css/main.css" />
         <link rel="stylesheet" href="./assets/css/desktop.css" />
     </head>
-    <body>
+    <body onresize="handleResize()" onload="handleResize()">
         <header>
             <nav class="navbar container">
                 <a class="navbar__logo" href="#">
@@ -27,10 +20,10 @@
                     <h3 class="navbar__logo--text">Lalasia</h3>
                 </a>
                 <ul class="navbar__menu">
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Article</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="./product.html">Product</a></li>
+                    <li><a href="./sevices.html">Service</a></li>
+                    <li><a href="./article.html">Article</a></li>
+                    <li><a href="./about.html">About Us</a></li>
                 </ul>
                 <ul class="navbar__features">
                     <li>
@@ -83,6 +76,8 @@
                         />
                     </div>
                 </section>
+
+                <!-- End hero -->
                 <section id="benifits" class="section">
                     <div class="section__title">
                         <div class="section__title--main">
@@ -154,11 +149,7 @@
                     </p>
                 </div>
                 <div class="section__content">
-                    <div
-                        class="slick-slider"
-                        onmousedown="handleMouseDown()"
-                        onmouseup="handleMouseUp()"
-                    >
+                    <div class="slick-slider">
                         <div class="slick-slider__item">
                             <img
                                 src="./assets/images/product-img-1.png"
@@ -225,22 +216,25 @@
             </section>
             <div class="container">
                 <section id="our-product" class="section">
-                    <div class="section__title">
-                        <div class="section__title--main">
-                            <h5 class="section__title--small">Our Product</h5>
-                            <h2>
-                                Crafted by talented and high quality material
-                            </h2>
+                    <div>
+                        <div class="section__title">
+                            <div class="section__title--main">
+                                <h5 class="section__title--small">
+                                    Our Product
+                                </h5>
+                                <h2>
+                                    Crafted by talented and high quality
+                                    material
+                                </h2>
+                            </div>
+                            <p class="section__title--content">
+                                Pellentesque etiam blandit in tincidunt at
+                                donec. Eget ipsum dignissim placerat nisi,
+                                adipiscing mauris non purus parturient.
+                            </p>
                         </div>
-                        <p class="section__title--content">
-                            Pellentesque etiam blandit in tincidunt at donec.
-                            Eget ipsum dignissim placerat nisi, adipiscing
-                            mauris non purus parturient.
-                        </p>
-                    </div>
-                    <div class="section__content">
                         <button class="btn btn--primary">Learn More</button>
-                        <div class="info-bar">
+                        <div class="info-bar display-none-desktop">
                             <div class="infor-bar__item">
                                 <h2 class="info-bar__item--title">20+</h2>
                                 <p class="info-bar__item--sub-title">
@@ -264,60 +258,176 @@
                             <img
                                 src="./assets/images/our-product-img-1.png"
                                 alt="our-product-img-1"
-                                width="50%"
+                                width="100%"
                             />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="info-bar display-none-moblie">
+                            <div class="infor-bar__item">
+                                <h2 class="info-bar__item--title">20+</h2>
+                                <p class="info-bar__item--sub-title">
+                                    Years Experience
+                                </p>
+                            </div>
+                            <div class="infor-bar__item">
+                                <h2 class="info-bar__item--title">483</h2>
+                                <p class="info-bar__item--sub-title">
+                                    Happy Client
+                                </p>
+                            </div>
+                            <div class="infor-bar__item">
+                                <h2 class="info-bar__item--title">150+</h2>
+                                <p class="info-bar__item--sub-title">
+                                    Project Finished
+                                </p>
+                            </div>
                         </div>
                         <div class="card">
                             <img
                                 src="./assets/images/our-product-img-2.png"
                                 alt="our-product-img-2"
-                                width="50%"
+                                width="100%"
                             />
                         </div>
                     </div>
                 </section>
-                <section id="testimonials" class="section">
-                    <div class="section__title">
-                        <div class="section__title--main">
-                            <h5 class="section__title--small">Testimonials</h5>
-                            <h2>What our customer say</h2>
+            </div>
+            <section id="testimonials" class="section">
+                <div class="section__title">
+                    <div class="section__title--main">
+                        <h5 class="section__title--small">Testimonials</h5>
+                        <h2>What our customer say</h2>
+                    </div>
+                    <p class="section__title--content">
+                        Pellentesque etiam blandit in tincidunt at donec. Eget
+                        ipsum dignissim placerat nisi, adipiscing mauris non
+                        purus parturient.
+                    </p>
+                </div>
+
+                <div class="section__content">
+                    <div class="card display-none-desktop">
+                        <div class="card__icon">
+                            <img
+                                src="./assets/images/icon-quote-up.png"
+                                alt="icon-quote-up"
+                            />
                         </div>
-                        <p class="section__title--content">
+                        <p class="card__content">
                             Pellentesque etiam blandit in tincidunt at donec.
                             Eget ipsum dignissim placerat nisi, adipiscing
-                            mauris non purus parturient.
+                            mauris non.
                         </p>
-                    </div>
-                    <div class="section__content">
-                        <div class="card">
-                            <div class="card__icon">
+                        <div class="card__review">
+                            <div class="card__review__item">
                                 <img
-                                    src="./assets/images/icon-quote-up.png"
-                                    alt="icon-quote-up"
+                                    src="./assets/images/review-avt-1.png"
+                                    alt=" review-avt-1"
                                 />
+                                <h4>Janne Cooper</h4>
                             </div>
-                            <p class="card__content">
-                                Pellentesque etiam blandit in tincidunt at
-                                donec. Eget ipsum dignissim placerat nisi,
-                                adipiscing mauris non.
-                            </p>
-                            <div class="card__review">
-                                <div class="card__review__item">
-                                    <img
-                                        src="./assets/images/review-avt-1.png"
-                                        alt=" review-avt-1"
-                                    />
-                                    <h4>Janne Cooper</h4>
-                                </div>
 
-                                <div class="card__review__item">
-                                    <i class="icon-start"></i>
-                                    <h4>4.3</h4>
+                            <div class="card__review__item">
+                                <i class="icon-start"></i>
+                                <h4>4.3</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slick-slider-card display-none-moblie">
+                        <div class="slick-slider-card__item">
+                            <div class="card">
+                                <div class="card__icon">
+                                    <img
+                                        src="./assets/images/icon-quote-up.png"
+                                        alt="icon-quote-up"
+                                    />
+                                </div>
+                                <p class="card__content">
+                                    Pellentesque etiam blandit in tincidunt at
+                                    donec. Eget ipsum dignissim placerat nisi,
+                                    adipiscing mauris non.
+                                </p>
+                                <div class="card__review">
+                                    <div class="card__review__item">
+                                        <img
+                                            src="./assets/images/review-avt-1.png"
+                                            alt=" review-avt-1"
+                                        />
+                                        <h4>Berry Gunawan</h4>
+                                    </div>
+
+                                    <div class="card__review__item">
+                                        <i class="icon-start"></i>
+                                        <h4>3.5</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slider-card__item">
+                            <div class="card">
+                                <div class="card__icon">
+                                    <img
+                                        src="./assets/images/icon-quote-up.png"
+                                        alt="icon-quote-up"
+                                    />
+                                </div>
+                                <p class="card__content">
+                                    Pellentesque etiam blandit in tincidunt at
+                                    donec. Eget ipsum dignissim placerat nisi,
+                                    adipiscing mauris non.
+                                </p>
+                                <div class="card__review">
+                                    <div class="card__review__item">
+                                        <img
+                                            src="./assets/images/review-avt-1.png"
+                                            alt=" review-avt-1"
+                                        />
+                                        <h4>Janne Cooper</h4>
+                                    </div>
+
+                                    <div class="card__review__item">
+                                        <i class="icon-start"></i>
+                                        <h4>4.3</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slider-card__item">
+                            <div class="card">
+                                <div class="card__icon">
+                                    <img
+                                        src="./assets/images/icon-quote-up.png"
+                                        alt="icon-quote-up"
+                                    />
+                                </div>
+                                <p class="card__content">
+                                    Pellentesque etiam blandit in tincidunt at
+                                    donec. Eget ipsum dignissim placerat nisi,
+                                    adipiscing mauris non.
+                                </p>
+                                <div class="card__review">
+                                    <div class="card__review__item">
+                                        <img
+                                            src="./assets/images/review-avt-5.png"
+                                            alt=" review-avt-3"
+                                        />
+                                        <h4>Janne Cooper</h4>
+                                    </div>
+
+                                    <div class="card__review__item">
+                                        <i class="icon-start"></i>
+                                        <h4>4.3</h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
+
+            <div class="container">
                 <section id="articles" class="section">
                     <div class="article-list">
                         <div class="article-list--main">
@@ -375,6 +485,15 @@
                                             Read More
                                         </div>
                                     </div>
+                                </div>
+                                <div class="pagination">
+                                    <button class="btn btn-square-white">
+                                        <i class="icon-arrow-left"></i>
+                                    </button>
+
+                                    <button class="btn btn-square-primary">
+                                        <i class="icon-arrow-right"></i>
+                                    </button>
                                 </div>
                             </article>
                         </div>
@@ -461,13 +580,14 @@
                         </div>
                     </div>
                 </section>
+
                 <section class="ads">
                     <h2>Join with me for get special discount</h2>
 
                     <button class="btn btn--primary">
                         <h4>
-                            Learn More
-                            <i class="fa-solid fa-arrow-right-long"></i>
+                            <span> Learn More </span>
+                            <i class="icon-arrow-right-long"></i>
                         </h4>
                     </button>
                 </section>
