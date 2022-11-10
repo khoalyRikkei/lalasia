@@ -4,9 +4,10 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Services - Lalasia</title>
+        <title>Product Detail - Lalasia</title>
         <link rel="stylesheet" href="./assets/css/main.css" />
         <link rel="stylesheet" href="./assets/css/desktop.css" />
+        <link rel="stylesheet" href="./assets/css/product.css" />
     </head>
     <body onresize="handleResize()" onload="handleResize()">
         <header>
@@ -20,7 +21,7 @@
                     <h3 class="navbar__logo--text">Lalasia</h3>
                 </a>
                 <ul class="navbar__menu">
-                    <li><a href="./product.html">Product</a></li>
+                    <li class="active"><a href="./product.html">Product</a></li>
                     <li><a href="./services.html">Service</a></li>
                     <li><a href="./article.html">Article</a></li>
                     <li><a href="./about.html">About Us</a></li>
@@ -40,7 +41,46 @@
                 <div class="navbar__btn-toggle"></div>
             </nav>
         </header>
-        <main></main>
+        <main>
+            <div class="container">
+                <section>
+                    <div class="col-12">
+                        <div class="card row">
+                            <div class="card__img col-12">
+                                <img
+                                    src="./assets/images/Product/product-1.png"
+                                    alt="product-1"
+                                />
+                            </div>
+                            <div class="card__text col-12">
+                                <h3>White Aesthetic Chair</h3>
+                                <div>Combination of wood and wool</div>
+                            </div>
+                            <div class="card__footer">
+                                <h3>$99.98</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="pagination">
+                    <button class="pagination--left">
+                        <span class="icon-arrow-left-2"></span>
+                    </button>
+
+                    <button class="btn--primary">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>...</button>
+                    <button>10</button>
+
+                    <button class="pagination--right">
+                        <span class="icon-arrow-right-2"></span>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- End header -->
         <footer>
             <nav class="navbar">
                 <div>

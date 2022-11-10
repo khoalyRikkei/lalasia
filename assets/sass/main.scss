@@ -69,6 +69,9 @@ h5 {
     padding: 16px;
     margin-bottom: 20px;
     background-color: white;
+    img {
+        width: 100%;
+    }
     &__icon {
         width: 44px;
         margin-bottom: 14px;
@@ -76,6 +79,7 @@ h5 {
     &__title {
         margin-bottom: 6px;
     }
+
     &__review {
         margin-top: 14px;
         display: flex;
@@ -92,6 +96,68 @@ h5 {
         }
     }
 }
+
+$var-gap: 5%;
+//col
+.col-1 {
+    width: 8.33%;
+    flex: 0 0 auto;
+}
+.col-2 {
+    width: 16.66%;
+    flex: 0 0 auto;
+}
+.col-3 {
+    width: 25%;
+    flex: 0 0 auto;
+}
+.col-4 {
+    width: 33.33%;
+    flex: 0 0 auto;
+}
+.col-5 {
+    width: 41.66%;
+    flex: 0 0 auto;
+}
+.col-6 {
+    width: calc(50% - $var-gap/2);
+    flex: 0 0 auto;
+}
+.col-7 {
+    width: 58.33%;
+    flex: 0 0 auto;
+}
+.col-8 {
+    width: 66.66%;
+    flex: 0 0 auto;
+}
+.col-9 {
+    width: 75%;
+    flex: 0 0 auto;
+}
+.col-10 {
+    width: 83.33%;
+    flex: 0 0 auto;
+}
+.col-11 {
+    width: 91.66%;
+    flex: 0 0 auto;
+}
+.col-12 {
+    width: 100%;
+    flex: 0 0 auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $var-gap;
+}
+.row > * {
+    flex-shrink: 0;
+    max-width: 100%;
+}
+
+//padding
 
 .btn {
     border: none;
@@ -155,6 +221,24 @@ h5 {
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 10px;
+}
+.icon-arrow-left-2 {
+    background-image: url("../images/icon/arrow-left.png");
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-arrow-right-2 {
+    background-image: url("../images/icon/arrow-right.png");
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 // css body
@@ -497,7 +581,107 @@ footer {
 .pagination {
     display: none;
 }
-.action {
+.active {
     border-bottom: 2px solid $primary-color;
     height: 100%;
+}
+.icon-arrow-left-not-tail {
+    background-image: url("../images/arrow-left-not-tail.png");
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: rgba(21, 20, 17, 0.6);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-arrow-right-not-tail {
+    background-image: url("../images/arrow-right-not-tail.png");
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: rgba(21, 20, 17, 0.6);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+//Create carousel container
+.carousel {
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 54px;
+
+    &__item {
+        display: none;
+        width: 100%;
+        height: auto;
+        img {
+            object-fit: cover;
+            height: 180px;
+        }
+        &__text {
+            h3 {
+                color: white;
+            }
+            button {
+                width: 64px;
+                height: 25px;
+                border-radius: 16px;
+                font-size: 10px;
+                padding: 6px;
+                a {
+                    display: inline-block;
+                    width: 100%;
+                }
+            }
+            text-align: left;
+            position: absolute;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            padding: 10%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: 100%;
+            p {
+                max-width: 80%;
+            }
+        }
+    }
+    &__control {
+        width: 100%;
+        height: 100%;
+        button {
+            border: none;
+            background-color: inherit;
+            bottom: 45%;
+            display: none;
+        }
+        &--prev {
+            position: absolute;
+            left: 20px;
+            cursor: pointer;
+        }
+        &--next {
+            position: absolute;
+            right: 20px;
+            cursor: pointer;
+        }
+        &--dots {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            bottom: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+}
+.sort {
+    display: none;
 }

@@ -40,6 +40,54 @@
     font-size: 18px;
     min-width: 992px;
   }
+  .col-lg-1 {
+    width: 8.33%;
+    flex: 0 0 auto;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+    flex: 0 0 auto;
+  }
+  .col-lg-3 {
+    width: 25%;
+    flex: 0 0 auto;
+  }
+  .col-lg-4 {
+    width: 29.9966666667%;
+    flex: 0 0 auto;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+    flex: 0 0 auto;
+  }
+  .col-lg-6 {
+    width: 50%;
+    flex: 0 0 auto;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+    flex: 0 0 auto;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+    flex: 0 0 auto;
+  }
+  .col-lg-9 {
+    width: 75%;
+    flex: 0 0 auto;
+  }
+  .col-10 {
+    width: 83.33%;
+    flex: 0 0 auto;
+  }
+  .col-11 {
+    width: 91.66%;
+    flex: 0 0 auto;
+  }
+  .col-12 {
+    width: 100%;
+    flex: 0 0 auto;
+  }
   .card {
     padding: 24px;
     background-color: white;
@@ -67,7 +115,6 @@
     border-bottom: 2px solid #518581;
   }
   header {
-    max-width: 1440px;
     width: 100%;
     height: 120px;
     border-bottom: 2px solid #f3f3f3;
@@ -76,6 +123,7 @@
   .container {
     margin: 0 auto;
     padding: 0 6.9%;
+    max-width: 1270px;
   }
   .navbar__btn-toggle {
     display: none;
@@ -113,6 +161,8 @@
   }
   .hero {
     height: fit-content;
+    width: 100%;
+    margin: 0 auto;
   }
   .hero__heading {
     width: 724px;
@@ -361,6 +411,49 @@
     right: 0;
     bottom: 0;
     display: flex;
+  }
+  .carousel__item {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  .carousel__item img {
+    object-fit: cover;
+    height: 500px;
+  }
+  .carousel__item__text h3 {
+    font-size: 44px;
+  }
+  .carousel__item__text button {
+    font-size: 14px;
+    width: 93px;
+    height: 41px;
+  }
+  .carousel__item__text p {
+    font-size: 24px;
+    color: white;
+    opacity: 0.8;
+  }
+  .carousel__control {
+    width: 100%;
+    height: 100%;
+  }
+  .carousel__control button {
+    border: none;
+    background-color: inherit;
+    bottom: 45%;
+    display: block;
+  }
+  .sort {
+    display: flex;
+    gap: 12px;
+    margin-left: auto;
+  }
+  .sort__icon {
+    background-image: url("../images/icon/icon-sort.png");
+    width: 24px;
+    height: 24px;
+    background-size: contain;
   }
   footer .navbar {
     flex-direction: row;

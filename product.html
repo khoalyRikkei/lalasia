@@ -9,10 +9,10 @@
         <link rel="stylesheet" href="./assets/css/desktop.css" />
         <link rel="stylesheet" href="./assets/css/product.css" />
     </head>
-    <body>
+    <body onresize="handleResize()" onload="handleResize()">
         <header>
             <nav class="navbar container">
-                <a class="navbar__logo" href="#">
+                <a class="navbar__logo" href="/">
                     <img
                         src="./assets/images/logo.png"
                         alt="logo"
@@ -57,11 +57,51 @@
                 </p>
 
                 <div class="hero__image">
-                    <img
-                        src="../assets/images/hero-image.png"
-                        alt=""
-                        width="100%"
-                    />
+                    <div class="carousel">
+                        <div class="carousel__item">
+                            <img
+                                src="./assets/images/product-banner.png"
+                                width="100%"
+                            />
+                            <div class="carousel__item__text">
+                                <button class="btn btn--primary">
+                                    <a href="#" target="_blank">Discount</a>
+                                </button>
+                                <h3>Ramadhan Sale Offer</h3>
+                                <p>
+                                    Get 40% off for the first transaction on
+                                    Lalasia
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel__item">
+                            <img
+                                src="./assets/images/service-banner.png"
+                                width="100%"
+                            />
+                        </div>
+                        <div class="carousel__item">
+                            <img
+                                src="./assets/images/articles-banner.png"
+                                width="100%"
+                            />
+                        </div>
+                        <div class="carousel__control">
+                            <button
+                                class="carousel__control--prev"
+                                onclick="prevNextSlide(-1)"
+                            >
+                                <span class="icon-arrow-left-not-tail"></span>
+                            </button>
+                            <button
+                                class="carousel__control--next"
+                                onclick="prevNextSlide(1)"
+                            >
+                                <span class="icon-arrow-right-not-tail"></span>
+                            </button>
+                            <div class="carousel__control--dots"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="hero__tool">
                     <div class="hero__search-bar">
@@ -88,6 +128,230 @@
             </section>
 
             <!-- End hero -->
+            <div class="container">
+                <div class="section__title">
+                    <h3>Total Products</h3>
+                    <div class="number-total">184</div>
+                    <div class="sort">
+                        <span class="sort__icon"></span>
+                        <p>Sort</p>
+                    </div>
+                </div>
+                <section class="row">
+                    <div class="col-6 col-lg-4">
+                        <div class="card">
+                            <div class="card__img">
+                                <a href="./product-detail.html" target="_blank"
+                                    ><img
+                                        src="./assets/images/product-img-1.png"
+                                        alt=""
+                                /></a>
+                            </div>
+                            <div class="card__text">
+                                <div class="card__text--catalogue">
+                                    Living Room
+                                </div>
+                                <a href="./product-detail.html" target="_blank"
+                                    ><h3>White Aesthetic Chair</h3></a
+                                >
+                                <div>Combination of wood and wool</div>
+                            </div>
+                            <div class="card__footer">
+                                <h3>$63.47</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="card">
+                            <div class="card__img">
+                                <img
+                                    src="./assets/images/Product/product-1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="card__text">
+                                <div class="card__text--catalogue">
+                                    Cupboard
+                                </div>
+                                <h3>Wooden Cupboard 3 RowChair</h3>
+                                <div>Combination of wood and wool</div>
+                            </div>
+                            <div class="card__footer">
+                                <h3>$63.47</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="card">
+                            <div class="card__img">
+                                <img
+                                    src="./assets/images/Product/product-2.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="card__text">
+                                <div class="card__text--catalogue">Chair</div>
+                                <h3>Minimalist Lounge Chair</h3>
+                                <div>Combination of wood and wool</div>
+                            </div>
+                            <div class="card__footer">
+                                <h3>$63.47</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="card">
+                            <div class="card__img">
+                                <img
+                                    src="./assets/images/Product/Rectangle 72.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="card__text">
+                                <div class="card__text--catalogue">Table</div>
+                                <h3>White Aesthetic Chair</h3>
+                                <div>Combination of wood and wool</div>
+                            </div>
+                            <div class="card__footer">
+                                <h3>$63.47</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="card">
+                            <div class="card__img">
+                                <img
+                                    src="./assets/images/Product/Rectangle 73.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="card__text">
+                                <div class="card__text--catalogue">
+                                    Cupboard
+                                </div>
+                                <h3>Minimalist White Cuppboard</h3>
+                                <div>Combination of wood and wool</div>
+                            </div>
+                            <div class="card__footer">
+                                <h3>$63.47</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="card">
+                            <div class="card__img">
+                                <img
+                                    src="./assets/images/Product/Rectangle 74.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="card__text">
+                                <div class="card__text--catalogue">Table</div>
+                                <h3>Wooden Dining Table</h3>
+                                <div>Combination of wood and wool</div>
+                            </div>
+                            <div class="card__footer">
+                                <h3>$63.47</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="card">
+                            <div class="card__img">
+                                <img
+                                    src="./assets/images/Product/Rectangle 75.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="card__text">
+                                <div class="card__text--catalogue">
+                                    Decoration
+                                </div>
+                                <h3>White Minimalist Vase</h3>
+                                <div>Combination of wood and wool</div>
+                            </div>
+                            <div class="card__footer">
+                                <h3>$63.47</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="card">
+                            <div class="card__img">
+                                <img
+                                    src="./assets/images/Product/Rectangle 76.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="card__text">
+                                <div class="card__text--catalogue">
+                                    Decoration
+                                </div>
+                                <h3>Plant With Clay Stand</h3>
+                                <div>Combination of wood and wool</div>
+                            </div>
+                            <div class="card__footer">
+                                <h3>$63.47</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="card">
+                            <div class="card__img">
+                                <img
+                                    src="./assets/images/Product/Rectangle 77.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="card__text">
+                                <div class="card__text--catalogue">
+                                    Decoration
+                                </div>
+                                <h3>Oval Gold Mirror</h3>
+                                <div>Combination of wood and wool</div>
+                            </div>
+                            <div class="card__footer">
+                                <h3>$63.47</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <div class="card">
+                            <div class="card__img">
+                                <img
+                                    src="./assets/images/Product/Rectangle 78.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="card__text">
+                                <div class="card__text--catalogue">
+                                    Decoration
+                                </div>
+                                <h3>Wooden Mirror</h3>
+                                <div>Combination of wood and wool</div>
+                            </div>
+                            <div class="card__footer">
+                                <h3>$63.47</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="pagination">
+                    <button class="pagination--left">
+                        <span class="icon-arrow-left-2"></span>
+                    </button>
+
+                    <button class="btn--primary">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>...</button>
+                    <button>10</button>
+
+                    <button class="pagination--right">
+                        <span class="icon-arrow-right-2"></span>
+                    </button>
+                </div>
+            </div>
         </main>
 
         <!-- End header -->

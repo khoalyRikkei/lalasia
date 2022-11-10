@@ -1,4 +1,7 @@
+$primary-color: #518581;
+
 .hero {
+    margin-bottom: 30px;
     &__heading {
         &__start {
             display: none;
@@ -9,33 +12,102 @@
     }
     &__search-bar {
         width: 100%;
-        max-width: 70%;
-        margin: 0 6.9%;
-        // height: 54px;
-        // background-color: white;
-        // padding: 8px;
-        // margin: 0 auto;
-        // margin-bottom: 30px;
-        // display: flex;
-        // justify-content: space-between;
-        // &__icon {
-        //     align-self: center;
-        //     display: flex;
-        //     width: 24px;
-        // }
-        // input {
-        //     font-weight: bold;
-        //     padding: 0 15px;
-        //     border: none;
-        //     outline: none;
-        // }
-        // button {
-        //     padding: 10px 10%;
-        // }
     }
     &__tool {
         display: flex;
         align-items: center;
-        color: red;
+        margin: 0 6.9%;
+    }
+    &__filter {
+        height: 84px;
+        background-color: white;
+        padding: 0 50px;
+        display: none;
+        align-items: center;
+    }
+}
+.section__title {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    h3 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .number-total {
+        padding: 5px 10px;
+        color: $primary-color;
+        background-color: #f3f3f3;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+}
+.card {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    &__text {
+        & > * {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        &--catalogue {
+            font-weight: bold;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+.pagination {
+    position: relative;
+    margin: 10px 0 100px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    button {
+        width: 38px;
+        height: 38px;
+        border: 0.2px solid rgba(187, 187, 187, 0.11);
+    }
+    &--left {
+        margin-right: 15px;
+        background-color: #fafafa;
+        border: none !important;
+    }
+    &--right {
+        margin-left: 15px;
+        background-color: #fafafa;
+        border: none !important;
+    }
+}
+@media screen and (min-width: 992px) {
+    .hero {
+        margin-bottom: 30px;
+        &__heading {
+            &__start {
+                display: none;
+            }
+            &__arrow {
+                display: none;
+            }
+        }
+        &__search-bar {
+            margin: 0 6.9%;
+        }
+
+        &__filter {
+            justify-content: center;
+            display: flex;
+        }
+    }
+    .card {
+        margin-bottom: 30px;
+    }
+    .pagination {
+        margin-top: 50px;
     }
 }
