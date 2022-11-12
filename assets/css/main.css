@@ -41,6 +41,7 @@ h5 {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 8px;
+  color: #151411;
 }
 
 * {
@@ -175,6 +176,16 @@ h5 {
   height: 70px;
   background-color: white;
   padding: 0 !important;
+}
+
+.btn--full-width {
+  padding: 15px;
+  width: 100%;
+}
+
+.btn--white {
+  border: 2px solid #f3f3f3;
+  background-color: #fff;
 }
 
 .text--p1 {
@@ -559,6 +570,7 @@ footer .navbar__menu__item:first-child {
   font-weight: bold;
   color: #151411;
   margin-bottom: 8px;
+  text-align: center;
 }
 footer .navbar__logo {
   margin-bottom: 20px;
