@@ -1,0 +1,135 @@
+$primary-color: #518581;
+.hero {
+	text-align: center;
+	position: relative;
+	width: 100%;
+	margin-bottom: 100px;
+	&__heading {
+		width: 100%;
+	}
+
+	&__description {
+		margin: 0 auto;
+		margin-bottom: 30px;
+		max-width: 85%;
+		margin-bottom: 55px;
+	}
+
+	&__image {
+		margin: 0 auto;
+		img {
+			min-height: 160px;
+		}
+	}
+}
+
+.card {
+	&__icon {
+		margin-bottom: 20px;
+		h1 {
+			font-size: 32px;
+			color: $primary-color;
+		}
+	}
+	&__title {
+		margin-bottom: 6px;
+	}
+
+	&__review {
+		margin-top: 14px;
+		display: flex;
+		justify-content: space-between;
+		&__item {
+			display: flex;
+			gap: 14px;
+			align-items: center;
+			img {
+				width: 8vw;
+				min-width: 18px;
+				max-width: 50px;
+			}
+		}
+	}
+}
+#portofolio {
+	.section {
+		margin-bottom: 100px;
+		&__title {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			h2 {
+				margin-bottom: 0;
+			}
+
+			a {
+				color: $primary-color;
+				font-weight: bold;
+			}
+		}
+	}
+	.card {
+		padding: 0;
+	}
+	.article-feature {
+		&__text--more {
+			font-weight: 500;
+			margin-top: 0;
+		}
+		&__img {
+			img {
+				height: auto;
+			}
+		}
+	}
+}
+
+//Desktop
+@media screen and (min-width: 992px) {
+	#portofolio {
+		.section {
+			&__title {
+				flex-direction: row;
+				&--main {
+					width: 40%;
+					max-width: 40%;
+				}
+			}
+			&__content {
+				gap: 50px;
+				.article-list {
+					gap: 30px;
+					&--main {
+						flex: 0.4;
+						height: auto;
+						.article-feature__img {
+							height: 50vw;
+							img {
+								height: 100%;
+								width: 100%;
+								margin-bottom: 0;
+							}
+						}
+					}
+
+					&--aside {
+						flex: 0.6;
+						flex-direction: column;
+						height: 100%;
+						max-height: 50vw;
+						gap: 30px;
+						.article-feature {
+							flex: 1;
+							&__img {
+								height: 100%;
+								img {
+									height: 25vw;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

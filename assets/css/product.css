@@ -1,12 +1,6 @@
 .hero {
   margin-bottom: 30px;
 }
-.hero__heading__start {
-  display: none;
-}
-.hero__heading__arrow {
-  display: none;
-}
 .hero__search-bar {
   width: 100%;
 }

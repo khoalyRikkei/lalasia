@@ -1,0 +1,62 @@
+.carousel {
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 54px;
+}
+.carousel__item {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+.carousel__item--banner {
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -50px;
+  background-color: #fff;
+}
+.carousel__item--banner .article--item__text--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.carousel__item--banner .card {
+  margin-bottom: 0;
+}
+.carousel__control {
+  width: 100%;
+  height: 100%;
+}
+.carousel__control button {
+  border: none;
+  background-color: inherit;
+  bottom: 45%;
+  display: none;
+}
+.carousel__control--prev {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+.carousel__control--next {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+.carousel__control--dots {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/*# sourceMappingURL=article.css.map */

@@ -2,14 +2,7 @@ $primary-color: #518581;
 
 .hero {
 	margin-bottom: 30px;
-	&__heading {
-		&__start {
-			display: none;
-		}
-		&__arrow {
-			display: none;
-		}
-	}
+
 	&__search-bar {
 		width: 100%;
 	}

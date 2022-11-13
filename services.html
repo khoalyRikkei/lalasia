@@ -1,112 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Services - Lalasia</title>
-        <link rel="stylesheet" href="./assets/css/main.css" />
-        <link rel="stylesheet" href="./assets/css/desktop.css" />
-    </head>
-    <body onresize="handleResize()" onload="handleResize()">
-        <header>
-            <nav class="navbar container">
-                <a class="navbar__logo" href="/">
-                    <img
-                        src="./assets/images/logo.png"
-                        alt="logo"
-                        width="100%"
-                    />
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Lalasia</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/desktop.css" />
+    <link rel="stylesheet" href="./assets/css/services.css">
+</head>
+
+<body onresize="handleResize()" onload="handleResize()" id='services'>
+    <header>
+        <nav class="navbar container">
+            <a class="navbar__logo" href="/">
+                <img src="./assets/images/logo.png" alt="logo" width="100%" />
+                <h3 class="navbar__logo--text">Lalasia</h3>
+            </a>
+            <ul class="navbar__menu">
+                <li><a href="./product.html">Product</a></li>
+                <li><a href="./services.html">Service</a></li>
+                <li><a href="./article.html">Article</a></li>
+                <li><a href="./about.html">About Us</a></li>
+            </ul>
+            <ul class="navbar__features">
+                <li>
+                    <a href="#"><img src="./assets/images/bag.png" alt="bag" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./assets/images/user.png" alt="user" /></a>
+                </li>
+            </ul>
+            <div class="navbar__btn-toggle"></div>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="hero section">
+            <div class="hero__heading">
+                <h1>Services</h1>
+            </div>
+            <p class="hero__description">The product crafted by talented crafter and using high quality material with
+                love inside</p>
+            <div class="hero__image">
+                <img src="./assets/images/services/hero-images.png" alt="" width="100%" />
+            </div>
+        </section>
+        <section class="row section">
+            <div class="card col-lg-4">
+                <div class="card__icon">
+                    <h1>01</h1>
+                </div>
+                <h3 class="card__title ">Furniture</h3>
+                <p class="card__content"> At the ultimate smart home, you're met with technology before you even step
+                    through the front door. </p>
+            </div>
+            <div class="card col-lg-4">
+                <div class="card__icon">
+                    <h1>02</h1>
+                </div>
+                <h3 class="card__title">Home Decoration</h3>
+                <p class="card__content"> Create A Calming Summer Escape With Our Luxurious Home Accessories For The
+                    Balmy Evenings.</p>
+            </div>
+            <div class="card col-lg-4">
+                <div class="card__icon">
+                    <h1>03</h1>
+                </div>
+                <h3 class="card__title">Kitchen Cabinet</h3>
+                <p class="card__content">Introducing the modular kitchen cabinet system. Start with our huge selection
+                    of base and wall cabinets. </p>
+            </div>
+            <div class="card col-lg-4">
+                <div class="card__icon">
+                    <h1>04</h1>
+                </div>
+                <h3 class="card__title">Interior Design</h3>
+                <p class="card__content">Innovative products often feature innovative designs that play with the
+                    patterns we are familiar.</p>
+            </div>
+            <div class="card col-lg-4">
+                <div class="card__icon">
+                    <h1>05</h1>
+                </div>
+                <h3 class="card__title">Exterior Design</h3>
+                <p class="card__content"> These stylish and resilient products provide up-to-date options for roofing,
+                    siding, decking, and outdoor spaces.</p>
+            </div>
+            <div class="card col-lg-4">
+                <div class="card__icon">
+                    <h1>06</h1>
+                </div>
+                <h3 class="card__title">Custom Furniture</h3>
+                <p class="card__content">With Quality Materials and Modern Designs, we have Designs for all Tastes. we
+                    bring you World Class Designs.</p>
+            </div>
+        </section>
+        <section class="section" id="portofolio">
+            <div class="section__title">
+                <div class="section__title--main">
+                    <h5 class="section__title--small">Portofolio</h5>
+                    <h2>Amazing project we've done before</h2>
+                </div>
+                <div class="section__title--content">
+                    <p>Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing
+                        mauris non.</p>
+                    <a href="#">View Portofolio</a>
+                </div>
+            </div>
+            <div class="section__content">
+                <div class="article-list">
+                    <div class="article-list--main">
+                        <article class="card article-feature">
+                            <div class="article-feature__img">
+                                <img src="./assets/images/articles-img-1.png" alt=" articles-img-1" width="100%" />
+                                <div class="article-feature__text">
+                                    <p class="article-featur__text--catalogue"> Tips and Trick </p>
+                                    <h3 class="article-feature__text--title"> Create Cozy Dinning Room Vibes </h3>
+                                    <p class="article-feature__text--summary"> Decorating with neutrals brings balance
+                                        to the dining room. With eclectic decoration on the sides, Caruso Dining Table
+                                        and Cyrillo Dining Chairs elevate the tonal base of the room. The modern
+                                        furniture set gives personality to any space in all types of architecture. The
+                                        wide volume enables everyone to sit back and relax, be it in the dining room,
+                                        conference, or office. </p>
+                                    <div class="article-feature__text--more"> Read More </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="article-list--aside">
+                        <article class="card article-feature">
+                            <div class="article-feature__img">
+                                <img src="./assets/images/articles-img-1.png" alt=" articles-img-1" width="100%" />
+                                <div class="article-feature__text">
+                                    <p class="article-featur__text--catalogue"> Tips and Trick </p>
+                                    <h3 class="article-feature__text--title"> Create Cozy Dinning Room Vibes </h3>
+                                    <p class="article-feature__text--summary"> Decorating with neutrals brings balance
+                                        to the dining room. With eclectic decoration on the sides, Caruso Dining Table
+                                        and Cyrillo Dining Chairs elevate the tonal base of the room. The modern
+                                        furniture set gives personality to any space in all types of architecture. The
+                                        wide volume enables everyone to sit back and relax, be it in the dining room,
+                                        conference, or office. </p>
+                                    <div class="article-feature__text--more"> Read More </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card article-feature">
+                            <div class="article-feature__img">
+                                <img src="./assets/images/articles-img-1.png" alt=" articles-img-1" width="100%" />
+                                <div class="article-feature__text">
+                                    <p class="article-featur__text--catalogue"> Tips and Trick </p>
+                                    <h3 class="article-feature__text--title"> Create Cozy Dinning Room Vibes </h3>
+                                    <p class="article-feature__text--summary"> Decorating with neutrals brings balance
+                                        to the dining room. With eclectic decoration on the sides, Caruso Dining Table
+                                        and Cyrillo Dining Chairs elevate the tonal base of the room. The modern
+                                        furniture set gives personality to any space in all types of architecture. The
+                                        wide volume enables everyone to sit back and relax, be it in the dining room,
+                                        conference, or office. </p>
+                                    <div class="article-feature__text--more"> Read More </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ads">
+            <h2>Are you interested work with us?</h2>
+            <button class="btn btn--primary">
+                <h4>
+                    <span> Learn More </span>
+                    <i class="icon-arrow-right-long"></i>
+                </h4>
+            </button>
+        </section>
+    </main>
+    <footer>
+        <nav class="navbar">
+            <div> <a class="navbar__logo" href="#">
+                    <img src="./assets/images/logo.png" alt="logo" />
                     <h3 class="navbar__logo--text">Lalasia</h3>
                 </a>
-                <ul class="navbar__menu">
-                    <li><a href="./product.html">Product</a></li>
-                    <li><a href="./services.html">Service</a></li>
-                    <li><a href="./article.html">Article</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                </ul>
-                <ul class="navbar__features">
-                    <li>
-                        <a href="#"
-                            ><img src="./assets/images/bag.png" alt="bag"
-                        /></a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            ><img src="./assets/images/user.png" alt="user"
-                        /></a>
-                    </li>
-                </ul>
-                <div class="navbar__btn-toggle"></div>
-            </nav>
-        </header>
-        <main></main>
-        <footer>
-            <nav class="navbar">
-                <div>
-                    '
-                    <a class="navbar__logo" href="#">
-                        <img src="./assets/images/logo.png" alt="logo" />
-                        <h3 class="navbar__logo--text">Lalasia</h3>
-                    </a>
-                    <p class="navbar__description">
-                        Lalasia is digital agency that help you make better
-                        experience iaculis cras in.
-                    </p>
-                </div>
+                <p class="navbar__description"> Lalasia is digital agency that help you make better experience iaculis
+                    cras in. </p>
+            </div>
+            <ul class="navbar__menu">
+                <li>
+                    <div class="navbar__menu__item">
+                        <a href="#">Product</a>
+                    </div>
+                    <div class="navbar__menu__item">
+                        <a href="#">New Arrivals</a>
+                    </div>
+                    <div class="navbar__menu__item">
+                        <a href="#">Best Selling</a>
+                    </div>
+                    <div class="navbar__menu__item">
+                        <a href="#">Home Decor</a>
+                    </div>
+                    <div class="navbar__menu__item">
+                        <a href="#">Kitchen Set</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="navbar__menu__item">
+                        <a href="#">Service</a>
+                    </div>
+                    <div class="navbar__menu__item">
+                        <a href="#">Catalog</a>
+                    </div>
+                    <div class="navbar__menu__item">
+                        <a href="#">Blog</a>
+                    </div>
+                    <div class="navbar__menu__item">
+                        <a href="#">Faq</a>
+                    </div>
+                    <div class="navbar__menu__item">
+                        <a href="#">Pricing</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="navbar__menu__item">
+                        <a href="#">Follow Us</a>
+                    </div>
+                    <div class="navbar__menu__item">
+                        <a href="#">Facebook</a>
+                    </div>
+                    <div class="navbar__menu__item">
+                        <a href="#">Instagram</a>
+                    </div>
+                    <div class="navbar__menu__item">
+                        <a href="#">Twitter</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
 
-                <ul class="navbar__menu">
-                    <li>
-                        <div class="navbar__menu__item">
-                            <a href="#">Product</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">New Arrivals</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Best Selling</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Home Decor</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Kitchen Set</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="navbar__menu__item">
-                            <a href="#">Service</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Catalog</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Blog</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Faq</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Pricing</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="navbar__menu__item">
-                            <a href="#">Follow Us</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Facebook</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Instagram</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Twitter</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </footer>
-        <script src="./js/script.js"></script>
-    </body>
 </html>

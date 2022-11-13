@@ -133,9 +133,6 @@ $line-screen-color: #f3f3f3;
 				display: flex;
 				gap: 14px;
 				align-items: center;
-				img {
-					width: 10%;
-				}
 			}
 		}
 	}
@@ -386,7 +383,6 @@ $line-screen-color: #f3f3f3;
 
 			.section__title {
 				flex-direction: column;
-				height: 250px;
 				&--content {
 					align-self: start;
 				}
@@ -418,11 +414,24 @@ $line-screen-color: #f3f3f3;
 			.article-item {
 				flex: 1;
 				width: 100%;
+
 				&__img {
-					flex: 5;
+					flex: 0.5;
+					img {
+						width: 100%;
+						width: 260px;
+					}
 				}
 				&__text {
-					flex: 6;
+					&--title {
+						font-size: 24px;
+					}
+					display: flex;
+					gap: 20px;
+					justify-content: center;
+				}
+				p {
+					font-size: 18px;
 				}
 			}
 		}

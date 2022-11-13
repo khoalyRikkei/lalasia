@@ -114,9 +114,6 @@
     gap: 14px;
     align-items: center;
   }
-  .card__review__item img {
-    width: 10%;
-  }
   .active {
     border-bottom: 2px solid #518581;
   }
@@ -343,7 +340,6 @@
   }
   .article-list--main .section__title {
     flex-direction: column;
-    height: 250px;
   }
   .article-list--main .section__title--content {
     align-self: start;
@@ -377,10 +373,22 @@
     width: 100%;
   }
   .article-list--aside .article-item__img {
-    flex: 5;
+    flex: 0.5;
+  }
+  .article-list--aside .article-item__img img {
+    width: 100%;
+    width: 260px;
   }
   .article-list--aside .article-item__text {
-    flex: 6;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  .article-list--aside .article-item__text--title {
+    font-size: 24px;
+  }
+  .article-list--aside .article-item p {
+    font-size: 18px;
   }
   .article-list .card {
     margin: 0 !important;

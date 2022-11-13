@@ -1,0 +1,119 @@
+.hero {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.hero__heading {
+  width: 100%;
+}
+.hero__description {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 85%;
+  margin-bottom: 55px;
+}
+.hero__image {
+  margin: 0 auto;
+}
+.hero__image img {
+  min-height: 160px;
+}
+
+.card__icon {
+  margin-bottom: 20px;
+}
+.card__icon h1 {
+  font-size: 32px;
+  color: #518581;
+}
+.card__title {
+  margin-bottom: 6px;
+}
+.card__review {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+.card__review__item {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.card__review__item img {
+  width: 8vw;
+  min-width: 18px;
+  max-width: 50px;
+}
+
+#portofolio .section {
+  margin-bottom: 100px;
+}
+#portofolio .section__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#portofolio .section__title h2 {
+  margin-bottom: 0;
+}
+#portofolio .section__title a {
+  color: #518581;
+  font-weight: bold;
+}
+#portofolio .card {
+  padding: 0;
+}
+#portofolio .article-feature__text--more {
+  font-weight: 500;
+  margin-top: 0;
+}
+#portofolio .article-feature__img img {
+  height: auto;
+}
+
+@media screen and (min-width: 992px) {
+  #portofolio .section__title {
+    flex-direction: row;
+  }
+  #portofolio .section__title--main {
+    width: 40%;
+    max-width: 40%;
+  }
+  #portofolio .section__content {
+    gap: 50px;
+  }
+  #portofolio .section__content .article-list {
+    gap: 30px;
+  }
+  #portofolio .section__content .article-list--main {
+    flex: 0.4;
+    height: auto;
+  }
+  #portofolio .section__content .article-list--main .article-feature__img {
+    height: 50vw;
+  }
+  #portofolio .section__content .article-list--main .article-feature__img img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  #portofolio .section__content .article-list--aside {
+    flex: 0.6;
+    flex-direction: column;
+    height: 100%;
+    max-height: 50vw;
+    gap: 30px;
+  }
+  #portofolio .section__content .article-list--aside .article-feature {
+    flex: 1;
+  }
+  #portofolio .section__content .article-list--aside .article-feature__img {
+    height: 100%;
+  }
+  #portofolio .section__content .article-list--aside .article-feature__img img {
+    height: 25vw;
+  }
+}
+
+/*# sourceMappingURL=services.css.map */
