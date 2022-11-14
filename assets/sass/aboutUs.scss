@@ -1,0 +1,65 @@
+body {
+    background-color: #fff;
+}
+
+.hero {
+    &__image {
+        > img {
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+}
+.card {
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    &__icon {
+        min-width: 44px;
+    }
+}
+#team {
+    .card {
+        flex-direction: column;
+    }
+}
+
+//media queries
+@media screen and (min-width: 992px) {
+    #mission {
+        gap: 50px;
+        display: flex;
+        justify-content: space-between;
+        div {
+            flex: 1;
+        }
+        .section {
+            &__title {
+                flex-direction: column;
+            }
+            &__content {
+                flex-direction: column;
+            }
+        }
+        .card__icon {
+            max-width: 70px;
+            max-height: 70px;
+        }
+    }
+    #team {
+        .section__title {
+            flex-wrap: wrap;
+            &--small {
+                width: 100%;
+            }
+            &--main {
+                max-width: 550px;
+            }
+            > p {
+                flex: 1;
+                max-width: 505px;
+                margin-top: 10px;
+            }
+        }
+    }
+}

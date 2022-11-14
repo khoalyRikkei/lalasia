@@ -1,0 +1,58 @@
+body {
+  background-color: #fff;
+}
+
+.hero__image > img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+.card__icon {
+  min-width: 44px;
+}
+
+#team .card {
+  flex-direction: column;
+}
+
+@media screen and (min-width: 992px) {
+  #mission {
+    gap: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #mission div {
+    flex: 1;
+  }
+  #mission .section__title {
+    flex-direction: column;
+  }
+  #mission .section__content {
+    flex-direction: column;
+  }
+  #mission .card__icon {
+    max-width: 70px;
+    max-height: 70px;
+  }
+  #team .section__title {
+    flex-wrap: wrap;
+  }
+  #team .section__title--small {
+    width: 100%;
+  }
+  #team .section__title--main {
+    max-width: 550px;
+  }
+  #team .section__title > p {
+    flex: 1;
+    max-width: 505px;
+    margin-top: 10px;
+  }
+}
+
+/*# sourceMappingURL=aboutUs.css.map */

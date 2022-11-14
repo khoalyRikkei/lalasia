@@ -1,18 +1,19 @@
 {
-	"name": "lalasia---furniture",
-	"version": "1.0.0",
-	"description": "Cut layout from figma",
-	"main": "index.js",
-	"scripts": {
-		"sasstocss": "sass assets/sass/main.scss assets/css/main.css -w",
-		"sassDtocssD": "sass assets/sass/desktop.scss assets/css/desktop.css -w",
-		"product": "sass assets/sass/product.scss assets/css/product.css -w",
-		"services": "sass assets/sass/services.scss assets/css/services.css -w",
-		"article": "sass assets/sass/article.scss assets/css/article.css -w"
-	},
-	"author": "",
-	"license": "ISC",
-	"dependencies": {
-		"sass": "^1.56.1"
-	}
+    "name": "lalasia---furniture",
+    "version": "1.0.0",
+    "description": "Cut layout from figma",
+    "main": "index.js",
+    "scripts": {
+        "sasstocss": "sass assets/sass/main.scss assets/css/main.css -w",
+        "sassDtocssD": "sass assets/sass/desktop.scss assets/css/desktop.css -w",
+        "product": "sass assets/sass/product.scss assets/css/product.css -w",
+        "services": "sass assets/sass/services.scss assets/css/services.css -w",
+        "article": "sass assets/sass/article.scss assets/css/article.css -w",
+        "aboutUs": "sass assets/sass/aboutUs.scss assets/css/aboutUs.css -w"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "sass": "^1.56.1"
+    }
 }

@@ -1,165 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Article - Lalasia</title>
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/desktop.css" />
+        <link rel="stylesheet" href="./assets/css/article.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Article - Lalasia</title>
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/desktop.css" />
-    <link rel="stylesheet" href="./assets/css/article.css">
-</head>
+    <body>
+        <body onresize="handleResize()" onload="handleResize()">
+            <!-- Start Header -->
+            <header>
+                <nav class="navbar container">
+                    <a class="navbar__logo" href="/">
+                        <img
+                            src="./assets/images/logo.png"
+                            alt="logo"
+                            width="100%"
+                        />
+                        <h3 class="navbar__logo--text">Lalasia</h3>
+                    </a>
+                    <ul class="navbar__menu">
+                        <li><a href="./product.html">Product</a></li>
+                        <li><a href="./services.html">Service</a></li>
+                        <li class="active">
+                            <a href="./article.html">Article</a>
+                        </li>
+                        <li><a href="./about.html">About Us</a></li>
+                    </ul>
+                    <ul class="navbar__features">
+                        <li>
+                            <a href="#"
+                                ><img src="./assets/images/bag.png" alt="bag"
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><img src="./assets/images/user.png" alt="user"
+                            /></a>
+                        </li>
+                    </ul>
+                    <div class="navbar__btn-toggle"></div>
+                </nav>
+            </header>
+            <!-- End Header -->
+            <main>
+                <div class="container">
+                    <!-- start hero -->
+                    <section class="hero section">
+                        <div class="hero__heading">
+                            <h1>Article</h1>
+                        </div>
+                        <p class="hero__description">
+                            We display products based on the latest products we
+                            have, if you want to see our old products please
+                            enter the name of the item
+                        </p>
+                        <div class="hero__image">
+                            <div class="carousel">
+                                <div class="carousel__item">
+                                    <img
+                                        src="./assets/images/article/hero-img.png"
+                                        width="100%"
+                                    />
+                                    <div class="carousel__item--banner">
+                                        <article class="card article-item">
+                                            <div class="article-item__text">
+                                                <p
+                                                    class="article-item__text--catalogue"
+                                                >
+                                                    Tips and Trick
+                                                </p>
+                                                <h3
+                                                    class="article-item__text--title"
+                                                >
+                                                    This 400-Square-Foot New
+                                                    York Apartment Is Maximized
+                                                    With Custom Millwork
+                                                </h3>
+                                                <div class="card__review">
+                                                    <div
+                                                        class="card__review__item"
+                                                    >
+                                                        <div class="auth">
+                                                            <img
+                                                                src="./assets/images/review-avt-2.png"
+                                                                alt=" review-avt-2"
+                                                            />
+                                                            <h5>
+                                                                By Jerremy Jean
+                                                            </h5>
+                                                        </div>
 
-<body>
+                                                        <p>Tue, 17 May 2022</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="carousel__item">
+                                    <img
+                                        src="./assets/images/service-banner.png"
+                                        width="100%"
+                                    />
+                                </div>
+                                <div class="carousel__item">
+                                    <img
+                                        src="./assets/images/articles-banner.png"
+                                        width="100%"
+                                    />
+                                </div>
+                                <div class="carousel__control">
+                                    <button
+                                        class="carousel__control--prev"
+                                        onclick="prevNextSlide(-1)"
+                                    >
+                                        <span
+                                            class="icon-arrow-left-not-tail"
+                                        ></span>
+                                    </button>
+                                    <button
+                                        class="carousel__control--next"
+                                        onclick="prevNextSlide(1)"
+                                    >
+                                        <span
+                                            class="icon-arrow-right-not-tail"
+                                        ></span>
+                                    </button>
+                                    <div class="carousel__control--dots"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-    <body onresize="handleResize()" onload="handleResize()">
-        <header>
-            <nav class="navbar container">
-                <a class="navbar__logo" href="/">
-                    <img src="./assets/images/logo.png" alt="logo" width="100%" />
-                    <h3 class="navbar__logo--text">Lalasia</h3>
-                </a>
-                <ul class="navbar__menu">
-                    <li><a href="./product.html">Product</a></li>
-                    <li><a href="./services.html">Service</a></li>
-                    <li><a href="./article.html">Article</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                </ul>
-                <ul class="navbar__features">
-                    <li>
-                        <a href="#"><img src="./assets/images/bag.png" alt="bag" /></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./assets/images/user.png" alt="user" /></a>
-                    </li>
-                </ul>
-                <div class="navbar__btn-toggle"></div>
-            </nav>
-        </header>
-        <main>
-            <section class="hero section">
-                <div class="hero__heading">
-                    <h1>Article</h1>
-                </div>
-                <p class="hero__description"> We display products based on the latest products we have, if you want to
-                    see our old products please enter the name of the item</p>
-                <div class="hero__image">
-                    <div class="carousel">
-                        <div class="carousel__item">
-                            <img src="./assets/images/article/hero-img.png" width="100%" />
-                            <div class="carousel__item--banner">
-                                <article class="card article-item">
-                                    <div class="article-item__text">
-                                        <p class="article-item__text--catalogue"> Tips and Trick </p>
-                                        <h3 class="article-item__text--title">This 400-Square-Foot New York Apartment Is
-                                            Maximized With Custom Millwork </h3>
+                    <!-- End hero -->
+
+                    <!-- start daily News -->
+                    <section id="dailyNews" class="section">
+                        <div class="section__title">
+                            <div class="section__title--main">
+                                <h5 class="section__title--small">
+                                    Daily News
+                                </h5>
+                                <h2>Today top headlines</h2>
+                            </div>
+                        </div>
+                        <div class="section__content row">
+                            <div class="col-12 col-lg-6">
+                                <a href="./detail-article.html" target="_blank">
+                                    <div class="card">
+                                        <div class="card__img">
+                                            <img
+                                                src="./assets/images/article/dailyNews-1.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="card__text">
+                                            <div class="card__text--catalogue">
+                                                Design Inspiration
+                                            </div>
+                                            <h3>
+                                                Bedroom Design is the Most
+                                                Personal Reflection of the
+                                                Owner, Really?
+                                            </h3>
+                                            <div class="card__text--summary">
+                                                Is it true that the bedroom
+                                                design is the most personal
+                                                reflection of the owner? Many
+                                                people believe that to be able
+                                                to judge a person's personality,
+                                                it is enough to
+                                            </div>
+                                        </div>
                                         <div class="card__review">
                                             <div class="card__review__item">
-                                                <img src="./assets/images/review-avt-2.png" alt=" review-avt-2" />
-                                                <h6>By Jerremy Jean</h6>
+                                                <div class="auth">
+                                                    <img
+                                                        src="./assets/images/review-avt-6.png"
+                                                        alt=" review-avt-6"
+                                                    />
+                                                    <h5>By Morgan Goldberg</h5>
+                                                </div>
+
+                                                <p>Tue, 17 May 2022</p>
                                             </div>
                                         </div>
                                     </div>
-                                </article>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="card">
+                                    <div class="card__img">
+                                        <img
+                                            src="./assets/images/article/dailyNews-2.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="card__text">
+                                        <div class="card__text--catalogue">
+                                            Tips and Trick
+                                        </div>
+                                        <h3>
+                                            Create a non-monotonous and dynamic
+                                            interior atmosphere with these 9
+                                            variations of wall tiles
+                                        </h3>
+                                        <div class="card__text--summary">
+                                            Quoted from The Healthy Home
+                                            Economist, a study in 1932 stated
+                                            that color doesn't really have to be
+                                            visible to have an effect The
+                                            radiance of a
+                                        </div>
+                                    </div>
+                                    <div class="card__review">
+                                        <div class="card__review__item">
+                                            <div class="auth">
+                                                <img
+                                                    src="./assets/images/review-avt-7.png"
+                                                    alt=" review-avt-7"
+                                                />
+                                                <h5>By Juliana Athorn</h5>
+                                            </div>
+
+                                            <p>Wednesday, 22 January 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="carousel__item">
-                            <img src="./assets/images/service-banner.png" width="100%" />
-                        </div>
-                        <div class="carousel__item">
-                            <img src="./assets/images/articles-banner.png" width="100%" />
-                        </div>
-                        <div class="carousel__control">
-                            <button class="carousel__control--prev" onclick="prevNextSlide(-1)">
-                                <span class="icon-arrow-left-not-tail"></span>
-                            </button>
-                            <button class="carousel__control--next" onclick="prevNextSlide(1)">
-                                <span class="icon-arrow-right-not-tail"></span>
-                            </button>
-                            <div class="carousel__control--dots"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero__tool">
-                    <div class="hero__search-bar">
-                        <div class="hero__search-bar__icon">
-                            <img src="./assets/images/search-icon.png" alt="icon-filter" width="100%" />
-                            <input type="text" placeholder="Search property" />
-                        </div>
-                        <button class="btn btn--primary">Search</button>
-                    </div>
-                    <div class="hero__filter">
-                        <img src="./assets/images/icon-filter.png" alt="icon-filter" width="30" />
-                        <span>Filter</span>
-                    </div>
-                </div>
-            </section>
-            <!-- End hero -->
-        </main>
-        <footer>
-            <nav class="navbar">
-                <div> ' <a class="navbar__logo" href="#">
-                        <img src="./assets/images/logo.png" alt="logo" />
-                        <h3 class="navbar__logo--text">Lalasia</h3>
-                    </a>
-                    <p class="navbar__description"> Lalasia is digital agency that help you make better experience
-                        iaculis cras in. </p>
-                </div>
-                <ul class="navbar__menu">
-                    <li>
-                        <div class="navbar__menu__item">
-                            <a href="#">Product</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">New Arrivals</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Best Selling</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Home Decor</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Kitchen Set</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="navbar__menu__item">
-                            <a href="#">Service</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Catalog</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Blog</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Faq</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Pricing</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="navbar__menu__item">
-                            <a href="#">Follow Us</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Facebook</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Instagram</a>
-                        </div>
-                        <div class="navbar__menu__item">
-                            <a href="#">Twitter</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </footer>
-        <script src="./js/script.js"></script>
-    </body>
-</body>
+                    </section>
 
+                    <!-- End daily News -->
+
+                    <!-- start Trending Topics -->
+                    <section id="trending" class="section">
+                        <div class="section__title">
+                            <div class="section__title--main">
+                                <h5 class="section__title--small">
+                                    Trending Topics
+                                </h5>
+                                <h2>Popular last week</h2>
+                            </div>
+                        </div>
+                        <div class="section__content">
+                            <div class="tab-bar">
+                                <p class="tab-bar__item selected">All</p>
+                                <p class="tab-bar__item">Tips and Trick</p>
+                                <p class="tab-bar__item">Interior Design</p>
+                                <p class="tab-bar__item display-none-moblie">
+                                    Design Inspiration
+                                </p>
+                                <p class="tab-bar__item display-none-moblie">
+                                    Color Guide
+                                </p>
+                                <div class="sort">
+                                    <span class="sort__icon"></span>
+                                    <p>Filter</p>
+                                </div>
+                            </div>
+                            <div class="article-list">
+                                <div class="card">
+                                    <div class="card__img">
+                                        <img
+                                            src="./assets/images/article/trending-1.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="card__text">
+                                        <div class="card__text--catalogue">
+                                            Tips and Trick
+                                        </div>
+                                        <h3 class="card__text--title">
+                                            Beautiful and Functional Home
+                                            Terrace Decoration
+                                        </h3>
+                                        <div
+                                            class="card__text--summary display-none-moblie"
+                                        >
+                                            Home terrace decorations are part of
+                                            every decoration or overall home
+                                            design. Interiordesign.id – If by
+                                            chance your house has enough space
+                                            or space.
+                                        </div>
+                                        <div class="card__review">
+                                            <div class="card__review__item">
+                                                <div class="auth">
+                                                    <img
+                                                        src="./assets/images/review-avt-6.png"
+                                                        alt=" review-avt-6"
+                                                    />
+                                                    <h5>
+                                                        By By Morgan Goldberg
+                                                    </h5>
+                                                </div>
+
+                                                <p>Friday, 1 April 2022</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card__img">
+                                        <img
+                                            src="./assets/images/article/trending-2.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="card__text">
+                                        <div class="card__text--catalogue">
+                                            Design Inspiration
+                                        </div>
+                                        <h3 class="card__text--title">
+                                            Modern Minimalist Home Design:
+                                            Aesthetics of Modern Home Interiors
+                                        </h3>
+                                        <div
+                                            class="card__text--summary display-none-moblie"
+                                        >
+                                            Home terrace decorations are part of
+                                            every decoration or overall home
+                                            design. Interiordesign.id - If by
+                                            chance your house has enough space
+                                            or space.
+                                        </div>
+                                        <div class="card__review">
+                                            <div class="card__review__item">
+                                                <div class="auth">
+                                                    <img
+                                                        src="./assets/images/review-avt-8.png"
+                                                        alt=" review-avt-8"
+                                                    />
+                                                    <h5>By Rizal Ahmad</h5>
+                                                </div>
+
+                                                <p>Wednesday, 17 March 2022</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card__img">
+                                        <img
+                                            src="./assets/images/article/trending-3.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="card__text">
+                                        <div class="card__text--catalogue">
+                                            Color Guide
+                                        </div>
+                                        <h3 class="card__text--title">
+                                            20+ Best Kitchen Paint Colors That
+                                            Make Kitchen Spaces Look More Fun
+                                        </h3>
+                                        <div
+                                            class="card__text--summary display-none-moblie"
+                                        >
+                                            Home terrace decorations are part of
+                                            every decoration or overall home
+                                            design. Interiordesign.id - If by
+                                            chance your house has enough space
+                                            or space.
+                                        </div>
+                                        <div class="card__review">
+                                            <div class="card__review__item">
+                                                <div class="auth">
+                                                    <img
+                                                        src="./assets/images/review-avt-9.png"
+                                                        alt=" review-avt-9"
+                                                    />
+                                                    <h5>By Filipus Pendi</h5>
+                                                </div>
+                                                <p>
+                                                    Saturday, 29 February 2022
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="load-more">
+                                <button class="btn btn--white">
+                                    Load More
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End Trending Topics -->
+
+                    <!-- Start Ads -->
+                    <section class="ads">
+                        <h2>Subscribe our newsletter</h2>
+                        <button class="btn btn--primary">
+                            <h4>
+                                <span> Let's Talk </span>
+                                <i class="icon-arrow-right-long"></i>
+                            </h4>
+                        </button>
+                    </section>
+                    <!-- End Ads -->
+                </div>
+            </main>
+
+            <!-- Start Footer -->
+            <footer>
+                <nav class="navbar">
+                    <div>
+                        <a class="navbar__logo" href="#">
+                            <img src="./assets/images/logo.png" alt="logo" />
+                            <h3 class="navbar__logo--text">Lalasia</h3>
+                        </a>
+                        <p class="navbar__description">
+                            Lalasia is digital agency that help you make better
+                            experience iaculis cras in.
+                        </p>
+                    </div>
+                    <ul class="navbar__menu">
+                        <li>
+                            <div class="navbar__menu__item">
+                                <a href="#">Product</a>
+                            </div>
+                            <div class="navbar__menu__item">
+                                <a href="#">New Arrivals</a>
+                            </div>
+                            <div class="navbar__menu__item">
+                                <a href="#">Best Selling</a>
+                            </div>
+                            <div class="navbar__menu__item">
+                                <a href="#">Home Decor</a>
+                            </div>
+                            <div class="navbar__menu__item">
+                                <a href="#">Kitchen Set</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="navbar__menu__item">
+                                <a href="#">Service</a>
+                            </div>
+                            <div class="navbar__menu__item">
+                                <a href="#">Catalog</a>
+                            </div>
+                            <div class="navbar__menu__item">
+                                <a href="#">Blog</a>
+                            </div>
+                            <div class="navbar__menu__item">
+                                <a href="#">Faq</a>
+                            </div>
+                            <div class="navbar__menu__item">
+                                <a href="#">Pricing</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="navbar__menu__item">
+                                <a href="#">Follow Us</a>
+                            </div>
+                            <div class="navbar__menu__item">
+                                <a href="#">Facebook</a>
+                            </div>
+                            <div class="navbar__menu__item">
+                                <a href="#">Instagram</a>
+                            </div>
+                            <div class="navbar__menu__item">
+                                <a href="#">Twitter</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+            <!-- Start Footer -->
+            <script src="./js/script.js"></script>
+        </body>
+    </body>
 </html>

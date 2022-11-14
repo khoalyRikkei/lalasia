@@ -1,135 +1,146 @@
 $primary-color: #518581;
+body {
+    background-color: #fff;
+}
 .hero {
-	text-align: center;
-	position: relative;
-	width: 100%;
-	margin-bottom: 100px;
-	&__heading {
-		width: 100%;
-	}
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 100px;
+    &__heading {
+        width: 100%;
+    }
 
-	&__description {
-		margin: 0 auto;
-		margin-bottom: 30px;
-		max-width: 85%;
-		margin-bottom: 55px;
-	}
+    &__description {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        max-width: 85%;
+        margin-bottom: 55px;
+    }
 
-	&__image {
-		margin: 0 auto;
-		img {
-			min-height: 160px;
-		}
-	}
+    &__image {
+        margin: 0 auto;
+        img {
+            min-height: 160px;
+        }
+    }
 }
 
 .card {
-	&__icon {
-		margin-bottom: 20px;
-		h1 {
-			font-size: 32px;
-			color: $primary-color;
-		}
-	}
-	&__title {
-		margin-bottom: 6px;
-	}
+    &__icon {
+        margin-bottom: 20px;
+        h1 {
+            font-size: 32px;
+            color: $primary-color;
+        }
+    }
+    &__title {
+        margin-bottom: 6px;
+    }
 
-	&__review {
-		margin-top: 14px;
-		display: flex;
-		justify-content: space-between;
-		&__item {
-			display: flex;
-			gap: 14px;
-			align-items: center;
-			img {
-				width: 8vw;
-				min-width: 18px;
-				max-width: 50px;
-			}
-		}
-	}
+    &__review {
+        margin-top: 14px;
+        display: flex;
+        justify-content: space-between;
+        &__item {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+            img {
+                width: 8vw;
+                min-width: 18px;
+                max-width: 50px;
+            }
+        }
+    }
 }
 #portofolio {
-	.section {
-		margin-bottom: 100px;
-		&__title {
-			display: flex;
-			flex-direction: column;
-			gap: 20px;
-			h2 {
-				margin-bottom: 0;
-			}
+    .section {
+        margin-bottom: 100px;
+        &__title {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h2 {
+                margin-bottom: 0;
+            }
 
-			a {
-				color: $primary-color;
-				font-weight: bold;
-			}
-		}
-	}
-	.card {
-		padding: 0;
-	}
-	.article-feature {
-		&__text--more {
-			font-weight: 500;
-			margin-top: 0;
-		}
-		&__img {
-			img {
-				height: auto;
-			}
-		}
-	}
+            a {
+                color: $primary-color;
+                font-weight: bold;
+            }
+        }
+    }
+    .card {
+        padding: 0;
+    }
 }
 
 //Desktop
 @media screen and (min-width: 992px) {
-	#portofolio {
-		.section {
-			&__title {
-				flex-direction: row;
-				&--main {
-					width: 40%;
-					max-width: 40%;
-				}
-			}
-			&__content {
-				gap: 50px;
-				.article-list {
-					gap: 30px;
-					&--main {
-						flex: 0.4;
-						height: auto;
-						.article-feature__img {
-							height: 50vw;
-							img {
-								height: 100%;
-								width: 100%;
-								margin-bottom: 0;
-							}
-						}
-					}
-
-					&--aside {
-						flex: 0.6;
-						flex-direction: column;
-						height: 100%;
-						max-height: 50vw;
-						gap: 30px;
-						.article-feature {
-							flex: 1;
-							&__img {
-								height: 100%;
-								img {
-									height: 25vw;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+    #portofolio {
+        .section {
+            &__title {
+                flex-direction: row;
+                &--main {
+                    width: 40%;
+                    max-width: 40%;
+                }
+            }
+            &__content {
+                gap: 50px;
+                .article-list {
+                    width: 100%;
+                    gap: 2vw;
+                    &--main {
+                        flex: 4;
+                        .article-feature {
+                            &__img {
+                                height: 38vw;
+                                min-height: 600px;
+                                margin-bottom: 0;
+                                padding-bottom: 0;
+                                img {
+                                    object-fit: cover;
+                                    object-position: center;
+                                }
+                            }
+                            &__text {
+                                bottom: 0;
+                            }
+                        }
+                    }
+                    &--aside {
+                        flex: 6;
+                        .article-feature {
+                            flex: 1;
+                            gap: 2vw;
+                            &__img {
+                                height: 18vw;
+                                min-height: 285px;
+                                img {
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: center;
+                                }
+                            }
+                        }
+                    }
+                }
+                .article-feature {
+                    &__text {
+                        &--title {
+                            font-size: 26px;
+                        }
+                        &--summary {
+                            font-size: 18px;
+                        }
+                        &--more {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

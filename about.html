@@ -7,9 +7,11 @@
         <title>About Us - Lalasia</title>
         <link rel="stylesheet" href="./assets/css/main.css" />
         <link rel="stylesheet" href="./assets/css/desktop.css" />
+        <link rel="stylesheet" href="./assets/css/aboutUs.css" />
     </head>
     <body>
         <body onresize="handleResize()" onload="handleResize()">
+            <!-- Start Header -->
             <header>
                 <nav class="navbar container">
                     <a class="navbar__logo" href="/">
@@ -24,7 +26,9 @@
                         <li><a href="./product.html">Product</a></li>
                         <li><a href="./services.html">Service</a></li>
                         <li><a href="./article.html">Article</a></li>
-                        <li><a href="./about.html">About Us</a></li>
+                        <li class="active">
+                            <a href="./about.html">About Us</a>
+                        </li>
                     </ul>
                     <ul class="navbar__features">
                         <li>
@@ -41,11 +45,231 @@
                     <div class="navbar__btn-toggle"></div>
                 </nav>
             </header>
-            <main></main>
+            <!-- End Header -->
+            <main>
+                <div class="container">
+                    <!-- start hero -->
+                    <section class="hero section">
+                        <div class="hero__heading">
+                            <h1>About Us</h1>
+                        </div>
+                        <p class="hero__description">
+                            We display products based on the latest products we
+                            have, if you want to see our old products please
+                            enter the name of the item
+                        </p>
+                        <div class="hero__image">
+                            <img
+                                src="./assets/images/about/hero-video.png"
+                                alt=""
+                                width="100%"
+                            />
+                        </div>
+                    </section>
+
+                    <!-- End hero -->
+
+                    <!-- Start Our Mission -->
+                    <section id="mission" class="section">
+                        <div class="section__title">
+                            <div class="section__title--main">
+                                <h5 class="section__title--small">
+                                    Our Mission
+                                </h5>
+                                <h2>
+                                    Our team dedicated to help find smart home
+                                    product
+                                </h2>
+                            </div>
+                            <div class="info-bar">
+                                <div class="infor-bar__item">
+                                    <h2 class="info-bar__item--title">20+</h2>
+                                    <p class="info-bar__item--sub-title">
+                                        Years Experience
+                                    </p>
+                                </div>
+                                <div class="infor-bar__item">
+                                    <h2 class="info-bar__item--title">483</h2>
+                                    <p class="info-bar__item--sub-title">
+                                        Happy Client
+                                    </p>
+                                </div>
+                                <div class="infor-bar__item">
+                                    <h2 class="info-bar__item--title">150+</h2>
+                                    <p class="info-bar__item--sub-title">
+                                        Project Finished
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section__content">
+                            <div class="card">
+                                <div class="card__icon">
+                                    <img
+                                        src="./assets/images/icon-call.png"
+                                        alt="icon-call"
+                                    />
+                                </div>
+                                <div class="card__text">
+                                    <h3 class="card__title">24/7 Supports</h3>
+                                    <p class="card__content">
+                                        24/7 support means a support service
+                                        that is provided 24 hours a day and 7
+                                        days a week.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__icon">
+                                    <img
+                                        src="./assets/images/icon-msg.png"
+                                        alt="icon-msg"
+                                    />
+                                </div>
+                                <div class="card__text">
+                                    <h3 class="card__title">
+                                        Free Consultation
+                                    </h3>
+                                    <p class="card__content">
+                                        A free consultation is a one-on-one
+                                        interaction or conversation given freely
+                                        to share one's thoughts and discuss
+                                        possible
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__icon">
+                                    <img
+                                        src="./assets/images/icon-award.png"
+                                        alt="icon-award"
+                                    />
+                                </div>
+                                <div class="card__text">
+                                    <h3 class="card__title">
+                                        Overall Guarantee
+                                    </h3>
+                                    <p class="card__content">
+                                        The comprehensive guarantee is required
+                                        for import, warehousing, transit,
+                                        processing and specific use.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- End Our Mission -->
+
+                    <!-- Start Our Team -->
+                    <section id="team" class="section">
+                        <div class="section__title">
+                            <h5 class="section__title--small">Our Team</h5>
+                            <div class="section__title--main">
+                                <h2>Meet our leading and strong team</h2>
+                            </div>
+                            <p>
+                                Pellentesque etiam blandit in tincidunt at
+                                donec. Eget ipsum dignissim placerat nisi,
+                                adipiscing mauris non purus parturient.
+                            </p>
+                        </div>
+                        <div class="section__content row">
+                            <div class="card col-12 col-lg-4">
+                                <div class="card__img">
+                                    <img
+                                        src="./assets/images/about/team-1.png"
+                                        alt="people-1"
+                                    />
+                                </div>
+                                <div class="card__text">
+                                    <h5 class="card__title">Jesse Depp</h5>
+                                    <p class="card__content">Founder & CEO</p>
+                                </div>
+                            </div>
+                            <div class="card col-12 col-lg-4">
+                                <div class="card__img">
+                                    <img
+                                        src="./assets/images/about/team-2.png"
+                                        alt="people-1"
+                                    />
+                                </div>
+                                <div class="card__text">
+                                    <h5 class="card__title">
+                                        Margareth Carter
+                                    </h5>
+                                    <p class="card__content">COO</p>
+                                </div>
+                            </div>
+                            <div class="card col-12 col-lg-4">
+                                <div class="card__img">
+                                    <img
+                                        src="./assets/images/about/team-3.png"
+                                        alt="people-1"
+                                    />
+                                </div>
+                                <div class="card__text">
+                                    <h5 class="card__title">Andrew Taggart</h5>
+                                    <p class="card__content">Developer</p>
+                                </div>
+                            </div>
+                            <div class="card col-12 col-lg-4">
+                                <div class="card__img">
+                                    <img
+                                        src="./assets/images/about/team-4.png"
+                                        alt="people-1"
+                                    />
+                                </div>
+                                <div class="card__text">
+                                    <h5 class="card__title">Grace Marie</h5>
+                                    <p class="card__content">Manager</p>
+                                </div>
+                            </div>
+                            <div class="card col-12 col-lg-4">
+                                <div class="card__img">
+                                    <img
+                                        src="./assets/images/about/team-5.png"
+                                        alt="people-1"
+                                    />
+                                </div>
+                                <div class="card__text">
+                                    <h5 class="card__title">Jesse Depp</h5>
+                                    <p class="card__content">Senior Designer</p>
+                                </div>
+                            </div>
+                            <div class="card col-12 col-lg-4">
+                                <div class="card__img">
+                                    <img
+                                        src="./assets/images/about/team-6.png"
+                                        alt="people-1"
+                                    />
+                                </div>
+                                <div class="card__text">
+                                    <h5 class="card__title">Jesse Depp</h5>
+                                    <p class="card__content">Marketer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- End Our Team -->
+
+                    <!-- Start Ads -->
+                    <section class="ads">
+                        <h2>Are you interested work with us?</h2>
+                        <button class="btn btn--primary">
+                            <h4>
+                                <span>Learn More</span>
+                                <i class="icon-arrow-right-long"></i>
+                            </h4>
+                        </button>
+                    </section>
+                    <!-- End Ads -->
+                </div>
+            </main>
             <footer>
                 <nav class="navbar">
                     <div>
-                        '
                         <a class="navbar__logo" href="#">
                             <img src="./assets/images/logo.png" alt="logo" />
                             <h3 class="navbar__logo--text">Lalasia</h3>
