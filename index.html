@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vòng Lặp</title>
+    <style>
+      fieldset {
+        margin-bottom: 30px;
+        padding: 20px;
+        border: 2px solid grey;
+        border-radius: 8px;
+        box-shadow: 4px 4px 5px rgba(93, 91, 91, 0.715);
+      }
+      legend {
+        padding: 5px 20px;
+        font-size: 1.5em;
+        background-color: orange;
+        color: white;
+        font-weight: 800;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Bài 1</legend>
+      <h4>
+        Viết chương trình hiển thị bình phương của số nguyên từ 2 → N, chỉ hiển
+        thị các kết quả chia hết cho 2. N nhập từ người dùng. Nếu N &lt; 2 hoặc
+        N &gt; 100, thông báo người dùng nhập lại.
+      </h4>
+      <button onclick="bai_01()">Click để nhập N</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>Bài 2</legend>
+      <h4>
+        Viết chương trình hiển thị bình phương của số chẵn từ 2 → N. N nhập từ
+        người dùng. Nếu N &lt; 2 hoặc N &gt; 100, thông báo người dùng nhập lại.
+      </h4>
+      <button onclick="bai_02()">Click để nhập N</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>Bài 3</legend>
+      <h4>
+        Viết chương trình hiển thị thay đổi 10 màu sắc ngẫu nhiên khi hiển thị
+        console.log()
+      </h4>
+      <button onclick="bai_03()">
+        Click để kiểm tra kết quả ở console.log()
+      </button>
+    </fieldset>
+
+    <fieldset>
+      <legend>Bài 4</legend>
+      <h4>
+        Viết chương trình hiển thị các số từ 1 → 100. Nếu số đó chia hết cho 3
+        thì hiển thị là “Fizz”, nếu số đó chia hết cho 5 thì hiển thị là “Buzz”.
+        Nếu số đó chia hế cho 3 và 5 thì hiển thị “FizzBuzz”.
+      </h4>
+      <button onclick="bai_04()">
+        Click để kiểm tra kết quả ở console.log()
+      </button>
+    </fieldset>
+    <script>
+      function bai_01() {
+        // INPUT: N, dieu kien hien thi
+
+        // OUTPUT: Nếu N >100 hoặc N <2 --> thông báo cho người dùng
+        //   -->Bình phương --> bình phương đó chia hết cho 2
+
+        const N = Number(prompt("Nhập vào một số "));
+
+        if (N > 100 || N < 2) {
+          alert("Vui lòng nhập từ 2 đến N");
+          return;
+
+          //return --> function kết thúc --> khối lệnh sau đó không chạy
+        }
+
+        for (let i = 2; i <= N; i++) {
+          const square = i * i;
+          if (square % 2 === 0) {
+            console.log("Kết quả", square);
+          }
+        }
+      }
+
+      function bai_02() {
+        // INPUT: N, dieu kien hien thi
+
+        // OUTPUT: Nếu N >100 hoặc N <2 --> thông báo cho người dùng
+        //   -->Bình phương --> số đó chia hết cho 2
+
+        const N = Number(prompt("Nhập vào một số "));
+
+        if (N > 100 || N < 2) {
+          alert("Vui lòng nhập từ 2 đến N");
+          return;
+
+          //return --> function kết thúc --> khối lệnh sau đó không chạy
+        }
+
+        for (let i = 2; i <= N; i++) {
+          const square = i * i;
+          if (i % 2 === 0) {
+            console.log("Kết quả", square);
+          }
+        }
+      }
+
+      function bai_03() {
+        // Math.random() --> 0 -> <1
+        // Math.floor() --> làm tròn xuống
+
+        for (let i = 0; i < 10; i++) {
+          const r = Math.floor(Math.random() * 255);
+          const g = Math.floor(Math.random() * 255);
+          const b = Math.floor(Math.random() * 255);
+
+          const color = `rgb(${r}, ${g}, ${b}`; // ==> rbg(10,20,40)
+          console.log("%c Hello, I am Rikkei Academy", `color: ${color}`);
+        }
+      }
+
+      function bai_04() {
+        for (let i = 1; i <= 100; i++) {
+          // if ((i % 3 === 0) & (i % 5 === 0)) {
+          //   console.log("FizzBuzz");
+          // } else if (i % 5 === 0) {
+          //   console.log("Buzz");
+          // } else if (i % 3 === 0) {
+          //   console.log("Fizz");
+          // } else {
+          //   console.log(i);
+          // }
+          let result = "";
+          if (i % 3 === 0) {
+            result += "Fizz";
+          }
+          if (i % 5 === 0) {
+            result += "Buzz";
+          }
+          console.log(result ? result : i);
+        }
+      }
+    </script>
+  </body>
+</html>
